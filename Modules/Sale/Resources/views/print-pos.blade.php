@@ -118,7 +118,7 @@
                 <tr style="border-bottom: 0;">
                     <td class="centered" colspan="3">
                         <div style="margin-top: 10px;">
-                            {!! \Milon\Barcode\Facades\DNS1DFacade::getBarcodeSVG($sale->reference, 'C128', 1, 25, 'black', false) !!}
+                            {!! \Milon\Barcode\Facades\DNS1DFacade::getBarcodeSVG($sale->reference, 'C128', 1, 25, 'black', false) ?? '-' !!}
                         </div>
                     </td>
                 </tr>

@@ -8,8 +8,8 @@
 
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
-        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-        <li class="breadcrumb-item active">Adjustments</li>
+        <li class="breadcrumb-item"><a href="{{ route('home') }}">{{ __('triangle.Home') }}</a></li>
+        <li class="breadcrumb-item active">{{ __('triangle.Adjustment') }}</li>
     </ol>
 @endsection
 
@@ -20,7 +20,7 @@
                 <div class="card">
                     <div class="card-body">
                         <a href="{{ route('adjustments.create') }}" class="btn btn-primary">
-                            Add Adjustment <i class="bi bi-plus"></i>
+                           {{ __('triangle.Adjustment') }} <i class="bi bi-plus"></i>
                         </a>
 
                         <hr>

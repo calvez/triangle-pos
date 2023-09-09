@@ -8,7 +8,7 @@
 
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
-        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('home') }}">{{ __('triangle.Home') }}</a></li>
         <li class="breadcrumb-item"><a href="{{ route('adjustments.index') }}">Adjustments</a></li>
         <li class="breadcrumb-item active">Details</li>
     </ol>
@@ -24,10 +24,10 @@
                             <table class="table table-bordered">
                                 <tr>
                                     <th colspan="2">
-                                        Date
+                                        {{ __('triangle.Date') }}  
                                     </th>
                                     <th colspan="2">
-                                        Reference
+                                        {{ __('triangle.Reference') }}  
                                     </th>
                                 </tr>
                                 <tr>
@@ -40,10 +40,10 @@
                                 </tr>
 
                                 <tr>
-                                    <th>Product Name</th>
-                                    <th>Code</th>
-                                    <th>Quantity</th>
-                                    <th>Type</th>
+                                    <th>{{ __('triangle.Product Name') }}</th>
+                                    <th>{{ __('triangle.Code') }}</th>
+                                    <th>{{ __('triangle.Quantity') }}</th>
+                                    <th>{{ __('triangle.Type') }}</th>
                                 </tr>
 
                                 @foreach($adjustment->adjustedProducts as $adjustedProduct)

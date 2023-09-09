@@ -4,7 +4,7 @@
 
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
-        <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('home') }}">{{ __('triangle.Home') }}</a></li>
         <li class="breadcrumb-item"><a href="{{ route('products.index') }}">Products</a></li>
         <li class="breadcrumb-item active">Details</li>
     </ol>
@@ -14,7 +14,7 @@
     <div class="container-fluid mb-4">
         <div class="row mb-3">
             <div class="col-md-12">
-                {!! \Milon\Barcode\Facades\DNS1DFacade::getBarCodeSVG($product->product_code, $product->product_barcode_symbology, 2, 110) !!}
+                {!! \Milon\Barcode\Facades\DNS1DFacade::getBarCodeSVG($product->product_code, $product->product_barcode_symbology, 2, 110) ?? '-' !!}
             </div>
         </div>
         <div class="row">

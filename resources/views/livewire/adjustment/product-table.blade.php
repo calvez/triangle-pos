@@ -19,12 +19,12 @@
             <thead>
             <tr class="align-middle">
                 <th class="align-middle">#</th>
-                <th class="align-middle">Product Name</th>
-                <th class="align-middle">Code</th>
-                <th class="align-middle">Stock</th>
-                <th class="align-middle">Quantity</th>
-                <th class="align-middle">Type</th>
-                <th class="align-middle">Action</th>
+                <th class="align-middle">{{ __('triangle.Product Name') }}</th>
+                <th class="align-middle">{{ __('triangle.Code') }}</th>
+                <th class="align-middle">{{ __('triangle.Stock') }}</th>
+                <th class="align-middle">{{ __('triangle.Quantity') }}</th>
+                <th class="align-middle">{{ __('triangle.Type') }}</th>
+                <th class="align-middle">{{ __('triangle.Action') }}</th>
             </tr>
             </thead>
             <tbody>
@@ -74,7 +74,7 @@
                 <tr>
                     <td colspan="7" class="text-center">
                         <span class="text-danger">
-                            Please search & select products!
+                            {{ __('triangle.Please search & select products!') }}
                         </span>
                     </td>
                 </tr>

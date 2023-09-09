@@ -1,38 +1,38 @@
 <li class="c-sidebar-nav-item {{ request()->routeIs('home') ? 'c-active' : '' }}">
     <a class="c-sidebar-nav-link" href="{{ route('home') }}">
-        <i class="c-sidebar-nav-icon bi bi-house" style="line-height: 1;"></i> Home
+        <i class="c-sidebar-nav-icon bi bi-house" style="line-height: 1;"></i> {{ __('triangle.Home') }}
     </a>
 </li>
 
 @can('access_products')
 <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('products.*') || request()->routeIs('product-categories.*') ? 'c-show' : '' }}">
     <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-        <i class="c-sidebar-nav-icon bi bi-journal-bookmark" style="line-height: 1;"></i> Products
+        <i class="c-sidebar-nav-icon bi bi-journal-bookmark" style="line-height: 1;"></i> {{ __('triangle.Products') }}
     </a>
     <ul class="c-sidebar-nav-dropdown-items">
         @can('access_product_categories')
         <li class="c-sidebar-nav-item">
             <a class="c-sidebar-nav-link {{ request()->routeIs('product-categories.*') ? 'c-active' : '' }}" href="{{ route('product-categories.index') }}">
-                <i class="c-sidebar-nav-icon bi bi-collection" style="line-height: 1;"></i> Categories
+                <i class="c-sidebar-nav-icon bi bi-collection" style="line-height: 1;"></i> {{ __('triangle.Categories') }}
             </a>
         </li>
         @endcan
         @can('create_products')
         <li class="c-sidebar-nav-item">
             <a class="c-sidebar-nav-link {{ request()->routeIs('products.create') ? 'c-active' : '' }}" href="{{ route('products.create') }}">
-                <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> Create Product
+                <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> {{ __('triangle.Create Product') }}
             </a>
         </li>
         @endcan
         <li class="c-sidebar-nav-item">
             <a class="c-sidebar-nav-link {{ request()->routeIs('products.index') ? 'c-active' : '' }}" href="{{ route('products.index') }}">
-                <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> All Products
+                <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.All Products') }}
             </a>
         </li>
         @can('print_barcodes')
            <li class="c-sidebar-nav-item">
                <a class="c-sidebar-nav-link {{ request()->routeIs('barcode.print') ? 'c-active' : '' }}" href="{{ route('barcode.print') }}">
-                   <i class="c-sidebar-nav-icon bi bi-printer" style="line-height: 1;"></i> Print Barcode
+                   <i class="c-sidebar-nav-icon bi bi-printer" style="line-height: 1;"></i> {{ __('triangle.Print Barcode') }}
                </a>
            </li>
         @endcan
@@ -43,19 +43,19 @@
 @can('access_adjustments')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('adjustments.*') ? 'c-show' : '' }}">
         <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-            <i class="c-sidebar-nav-icon bi bi-clipboard-check" style="line-height: 1;"></i> Stock Adjustments
+            <i class="c-sidebar-nav-icon bi bi-clipboard-check" style="line-height: 1;"></i> {{ __('triangle.Stock Adjustments') }}
         </a>
         <ul class="c-sidebar-nav-dropdown-items">
             @can('create_adjustments')
                 <li class="c-sidebar-nav-item">
                     <a class="c-sidebar-nav-link {{ request()->routeIs('adjustments.create') ? 'c-active' : '' }}" href="{{ route('adjustments.create') }}">
-                        <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> Create Adjustment
+                        <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> {{ __('triangle.Create Adjustment') }}
                     </a>
                 </li>
             @endcan
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link {{ request()->routeIs('adjustments.index') ? 'c-active' : '' }}" href="{{ route('adjustments.index') }}">
-                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> All Adjustments
+                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.All Adjustments') }}
                 </a>
             </li>
         </ul>
@@ -65,19 +65,19 @@
 @can('access_quotations')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('quotations.*') ? 'c-show' : '' }}">
         <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-            <i class="c-sidebar-nav-icon bi bi-cart-check" style="line-height: 1;"></i> Quotations
+            <i class="c-sidebar-nav-icon bi bi-cart-check" style="line-height: 1;"></i> {{ __('triangle.Quotations') }}
         </a>
         <ul class="c-sidebar-nav-dropdown-items">
             @can('create_adjustments')
                 <li class="c-sidebar-nav-item">
                     <a class="c-sidebar-nav-link {{ request()->routeIs('quotations.create') ? 'c-active' : '' }}" href="{{ route('quotations.create') }}">
-                        <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> Create Quotation
+                        <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> {{ __('triangle.Create Quotation') }} 
                     </a>
                 </li>
             @endcan
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link {{ request()->routeIs('quotations.index') ? 'c-active' : '' }}" href="{{ route('quotations.index') }}">
-                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> All Quotations
+                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.All Quotations') }}
                 </a>
             </li>
         </ul>
@@ -87,13 +87,13 @@
 @can('access_purchases')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('purchases.*') || request()->routeIs('purchase-payments*') ? 'c-show' : '' }}">
         <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-            <i class="c-sidebar-nav-icon bi bi-bag" style="line-height: 1;"></i> Purchases
+            <i class="c-sidebar-nav-icon bi bi-bag" style="line-height: 1;"></i> {{ __('triangle.Purchases') }}
         </a>
         @can('create_purchase')
             <ul class="c-sidebar-nav-dropdown-items">
                 <li class="c-sidebar-nav-item">
                     <a class="c-sidebar-nav-link {{ request()->routeIs('purchases.create') ? 'c-active' : '' }}" href="{{ route('purchases.create') }}">
-                        <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> Create Purchase
+                        <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> {{ __('triangle.Create Purchase') }}
                     </a>
                 </li>
             </ul>
@@ -101,7 +101,7 @@
         <ul class="c-sidebar-nav-dropdown-items">
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link {{ request()->routeIs('purchases.index') ? 'c-active' : '' }}" href="{{ route('purchases.index') }}">
-                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> All Purchases
+                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.All Purchases') }}
                 </a>
             </li>
         </ul>
@@ -111,7 +111,7 @@
 @can('access_purchase_returns')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('purchase-returns.*') || request()->routeIs('purchase-return-payments.*') ? 'c-show' : '' }}">
         <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-            <i class="c-sidebar-nav-icon bi bi-arrow-return-right" style="line-height: 1;"></i> Purchase Returns
+            <i class="c-sidebar-nav-icon bi bi-arrow-return-right" style="line-height: 1;"></i> {{ __('triangle.Purchase Returns') }}
         </a>
         @can('create_purchase_returns')
             <ul class="c-sidebar-nav-dropdown-items">
