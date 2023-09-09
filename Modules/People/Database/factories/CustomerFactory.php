@@ -1,4 +1,5 @@
 <?php
+
 namespace Modules\People\Database\factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -25,8 +26,7 @@ class CustomerFactory extends Factory
             'customer_phone' => $this->faker->phoneNumber(),
             'city' => $this->faker->city(),
             'country' => $this->faker->country(),
-            'address' => $this->faker->streetAddress()
+            'address' => $this->faker->streetAddress(),
         ];
     }
 }
-

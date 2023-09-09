@@ -15,7 +15,7 @@ return [
     'Create Adjustment' => 'Készletmozgás rögzítése',
     'Create Product' => 'Termék hozzáadása',
     'Create Quotation' => 'Új árajánlat',
-    'Date' =>  'Dátum',
+    'Date' => 'Dátum',
     'Home' => 'Kezdőlap',
     'Note (If Needed)' => 'Megjegyzés (opcionális)',
     'Please search & select products!' => 'Kérem keresse meg és válassza ki a terméket',
@@ -24,11 +24,11 @@ return [
     'Products' => 'Termékek',
     'Quantity' => 'Mennyiség',
     'Quotations' => 'Árajánlatok',
-    'Reference' =>  'Reference',
+    'Reference' => 'Reference',
     'Stock Adjustments' => 'Készletmozgások',
     'Stock' => 'Készlet',
     'Type' => 'Típus',
     'Purchases' => 'Vásárlások',
     'Create Purchase' => 'Vásárlás rögzítése',
-    'All Purchases' => 'Összes vásárlás'
+    'All Purchases' => 'Összes vásárlás',
 ];

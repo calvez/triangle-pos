@@ -2,8 +2,8 @@
 
 namespace Modules\People\Entities;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 
 class Supplier extends Model
 {
@@ -11,7 +11,8 @@ class Supplier extends Model
 
     protected $guarded = [];
 
-    protected static function newFactory() {
+    protected static function newFactory()
+    {
         return \Modules\People\Database\factories\SupplierFactory::new();
     }
 }

@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['middleware' => 'auth'], function() {
+Route::group(['middleware' => 'auth'], function () {
 
     //Generate PDF
     Route::get('/purchase-returns/pdf/{id}', function ($id) {
@@ -23,7 +23,7 @@ Route::group(['middleware' => 'auth'], function() {
             'supplier' => $supplier,
         ])->setPaper('a4');
 
-        return $pdf->stream('purchase-return-'. $purchaseReturn->reference .'.pdf');
+        return $pdf->stream('purchase-return-'.$purchaseReturn->reference.'.pdf');
     })->name('purchase-returns.pdf');
 
     //Purchase Returns

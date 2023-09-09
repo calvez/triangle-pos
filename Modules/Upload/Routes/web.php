@@ -21,5 +21,3 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/filepond/delete', 'UploadController@filepondDelete')->name('filepond.delete');
 
 });
-
-

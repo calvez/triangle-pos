@@ -14,4 +14,3 @@ Route::group(['middleware' => 'auth'], function () {
     //Product Category
     Route::resource('product-categories', 'CategoriesController')->except('create', 'show');
 });
-

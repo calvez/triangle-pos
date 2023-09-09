@@ -22,7 +22,7 @@ Route::group(['middleware' => 'auth'], function () {
             'customer' => $customer,
         ])->setPaper('a4');
 
-        return $pdf->stream('quotation-'. $quotation->reference .'.pdf');
+        return $pdf->stream('quotation-'.$quotation->reference.'.pdf');
     })->name('quotations.pdf');
 
     //Send Quotation Mail

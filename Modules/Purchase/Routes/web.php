@@ -23,7 +23,7 @@ Route::group(['middleware' => 'auth'], function () {
             'supplier' => $supplier,
         ])->setPaper('a4');
 
-        return $pdf->stream('purchase-'. $purchase->reference .'.pdf');
+        return $pdf->stream('purchase-'.$purchase->reference.'.pdf');
     })->name('purchases.pdf');
 
     //Sales
