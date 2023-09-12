@@ -31,4 +31,9 @@ return [
     'Purchases' => 'Vásárlások',
     'Create Purchase' => 'Vásárlás rögzítése',
     'All Purchases' => 'Összes vásárlás',
+    'Purchase Returns' => 'Visszatérítések',
+    'Reference' => 'Referencia',
+    'Create Purchase Return' => 'Visszatlérítés Létrehozás',
+    'All Purchase Returns' => 'Minden visszatérítés',
+    'Sales' => 'Eladások'
 ];
