@@ -558,7 +558,7 @@
                                 <div class="col-lg-4 col-md-6 mb-3">
                                     <div class="card h-100 border-0 shadow">
                                         <div class="card-header">
-                                            Sale Returns
+                                            {{ __('triangle.Purchase Returns') }}
                                         </div>
                                         <div class="card-body">
                                             <div class="row">
@@ -680,7 +680,7 @@
                                 <div class="col-lg-4 col-md-6 mb-3">
                                     <div class="card h-100 border-0 shadow">
                                         <div class="card-header">
-                                            Purchase Returns
+                                            {{__('Purchase_Returns')}}
                                         </div>
                                         <div class="card-body">
                                             <div class="row">

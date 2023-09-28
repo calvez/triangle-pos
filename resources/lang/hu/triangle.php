@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-
+// {{ __('triangle.')}}
 return [
     'Action' => 'Művelet',
     'Add Product' => 'Termék hozzáadása',
@@ -17,6 +17,9 @@ return [
     'Create Quotation' => 'Új árajánlat',
     'Date' => 'Dátum',
     'Home' => 'Kezdőlap',
+    'Edit' => 'Szerkesztés',
+    'Create' => 'Létrehozás',
+    'Create Category' => 'Kategória létrehozás',
     'Note (If Needed)' => 'Megjegyzés (opcionális)',
     'Please search & select products!' => 'Kérem keresse meg és válassza ki a terméket',
     'Print Barcode' => 'Vonalkód nyomtatás',
@@ -34,6 +37,18 @@ return [
     'Purchase Returns' => 'Visszatérítések',
     'Reference' => 'Referencia',
     'Create Purchase Return' => 'Visszatlérítés Létrehozás',
-    'All Purchase Returns' => 'Minden visszatérítés',
-    'Sales' => 'Eladások'
+    'All_Purchase_Returns' => 'Minden visszatérítés',
+    'Sales' => 'Eladások',
+    'Purchase Returns' => 'Visszatérítések',
+    'Create Sale' => 'Értékesítés rögzítése',
+    'All Sales' => 'Összes értékesítés',
+    'Sale Returns' => 'Visszatérítések',
+    'All Sale Returns' => 'Összes visszatérítés',
+    'Categories' => 'Kategóriák',
+    'Add Category' => 'Kategória hozzáadása',
+    'Are you sure? It will delete the data permanently!' => 'Biztosan törli? Ez véglegesen törölni fogja az adatot',
+    'Update' => 'Frissítés',
+    'Category Name' => 'Kategória neve',
+    'Category Code' => 'Kategória kódja',
+    'Edit Product Category' => 'Termékkategória szerkesztése'
 ];

@@ -125,7 +125,7 @@
         <ul class="c-sidebar-nav-dropdown-items">
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link {{ request()->routeIs('purchase-returns.index') ? 'c-active' : '' }}" href="{{ route('purchase-returns.index') }}">
-                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.All Purchase Returns') }}
+                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.All_Purchase_Returns') }}
                 </a>
             </li>
         </ul>
@@ -141,7 +141,7 @@
             <ul class="c-sidebar-nav-dropdown-items">
                 <li class="c-sidebar-nav-item">
                     <a class="c-sidebar-nav-link {{ request()->routeIs('sales.create') ? 'c-active' : '' }}" href="{{ route('sales.create') }}">
-                        <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> Create Sale
+                        <i class="c-sidebar-nav-icon bi bi-journal-plus" style="line-height: 1;"></i> {{ __('triangle.Create Sale') }}
                     </a>
                 </li>
             </ul>
@@ -149,7 +149,7 @@
         <ul class="c-sidebar-nav-dropdown-items">
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link {{ request()->routeIs('sales.index') ? 'c-active' : '' }}" href="{{ route('sales.index') }}">
-                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> All Sales
+                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.All Sales') }}
                 </a>
             </li>
         </ul>
@@ -159,7 +159,7 @@
 @can('access_sale_returns')
     <li class="c-sidebar-nav-item c-sidebar-nav-dropdown {{ request()->routeIs('sale-returns.*') || request()->routeIs('sale-return-payments.*') ? 'c-show' : '' }}">
         <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-            <i class="c-sidebar-nav-icon bi bi-arrow-return-left" style="line-height: 1;"></i> Sale Returns
+            <i class="c-sidebar-nav-icon bi bi-arrow-return-left" style="line-height: 1;"></i> {{ __('triangle.Purchase Returns') }}
         </a>
         @can('create_sale_returns')
             <ul class="c-sidebar-nav-dropdown-items">
@@ -173,7 +173,7 @@
         <ul class="c-sidebar-nav-dropdown-items">
             <li class="c-sidebar-nav-item">
                 <a class="c-sidebar-nav-link {{ request()->routeIs('sale-returns.index') ? 'c-active' : '' }}" href="{{ route('sale-returns.index') }}">
-                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> All Sale Returns
+                    <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.All_Purchase_Returns') }}
                 </a>
             </li>
         </ul>
