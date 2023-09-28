@@ -62,7 +62,7 @@
                                     <div class="form-group">
                                         <label for="status">Status <span class="text-danger">*</span></label>
                                         <select class="form-control" name="status" id="status" required>
-                                            <option {{ $purchase_return->status == 'Pending' ? 'selected' : '' }} value="Pending">Pending</option>
+                                            <option {{ $purchase_return->status == '{{ __('triangle.Pending')}}' ? 'selected' : '' }} value="{{ __('triangle.Pending')}}">{{ __('triangle.Pending')}}</option>
                                             <option {{ $purchase_return->status == 'Shipped' ? 'selected' : '' }} value="Shipped">Shipped</option>
                                             <option {{ $purchase_return->status == 'Completed' ? 'selected' : '' }} value="Completed">Completed</option>
                                         </select>
@@ -71,14 +71,14 @@
                                 <div class="col-lg-4">
                                     <div class="from-group">
                                         <div class="form-group">
-                                            <label for="payment_method">Payment Method <span class="text-danger">*</span></label>
+                                            <label for="payment_method">{{ __('triangle.Payment Method')}} <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" name="payment_method" required value="{{ $purchase_return->payment_method }}" readonly>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="paid_amount">Amount Paid <span class="text-danger">*</span></label>
+                                        <label for="paid_amount">{{ __('triangle.Amount Paid')}} <span class="text-danger">*</span></label>
                                         <input id="paid_amount" type="text" class="form-control" name="paid_amount" required value="{{ $purchase_return->paid_amount }}" readonly>
                                     </div>
                                 </div>

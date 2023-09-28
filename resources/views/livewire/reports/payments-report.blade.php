@@ -42,9 +42,9 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label>Payment Method</label>
+                                    <label>{{ __('triangle.Payment Method')}}</label>
                                     <select wire:model.defer="payment_method" class="form-control" name="payment_method">
-                                        <option value="">Select Payment Method</option>
+                                        <option value="">Select {{ __('triangle.Payment Method')}}</option>
                                         <option value="Cash">Cash</option>
                                         <option value="Credit Card">Credit Card</option>
                                         <option value="Bank Transfer">Bank Transfer</option>
@@ -75,7 +75,7 @@
                         <table class="table table-bordered table-striped text-center mb-0">
                             <div wire:loading.flex class="col-12 position-absolute justify-content-center align-items-center" style="top:0;right:0;left:0;bottom:0;background-color: rgba(255,255,255,0.5);z-index: 99;">
                                 <div class="spinner-border text-primary" role="status">
-                                    <span class="sr-only">Loading...</span>
+                                    <span class="sr-only">{{ __('triangle.Loading...')}}</span>
                                 </div>
                             </div>
                             <thead>
@@ -84,7 +84,7 @@
                                 <th>Reference</th>
                                 <th>{{ ucwords(str_replace('_', ' ', $payments)) }}</th>
                                 <th>Total</th>
-                                <th>Payment Method</th>
+                                <th>{{ __('triangle.Payment Method')}}</th>
                             </tr>
                             </thead>
                             <tbody>

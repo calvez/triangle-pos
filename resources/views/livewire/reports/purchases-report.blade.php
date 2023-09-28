@@ -41,7 +41,7 @@
                                     <label>Status</label>
                                     <select wire:model.defer="purchase_status" class="form-control" name="purchase_status">
                                         <option value="">Select Status</option>
-                                        <option value="Pending">Pending</option>
+                                        <option value="{{ __('triangle.Pending')}}">{{ __('triangle.Pending')}}</option>
                                         <option value="Ordered">Ordered</option>
                                         <option value="Completed">Completed</option>
                                     </select>
@@ -79,7 +79,7 @@
                     <table class="table table-bordered table-striped text-center mb-0">
                         <div wire:loading.flex class="col-12 position-absolute justify-content-center align-items-center" style="top:0;right:0;left:0;bottom:0;background-color: rgba(255,255,255,0.5);z-index: 99;">
                             <div class="spinner-border text-primary" role="status">
-                                <span class="sr-only">Loading...</span>
+                                <span class="sr-only">{{ __('triangle.Loading...')}}</span>
                             </div>
                         </div>
                         <thead>
@@ -101,7 +101,7 @@
                                 <td>{{ $purchase->reference }}</td>
                                 <td>{{ $purchase->supplier_name }}</td>
                                 <td>
-                                    @if ($purchase->status == 'Pending')
+                                    @if ($purchase->status == '{{ __('triangle.Pending')}}')
                                         <span class="badge badge-info">
                                     {{ $purchase->status }}
                                 </span>

@@ -62,7 +62,7 @@
                                     <div class="form-group">
                                         <label for="status">Status <span class="text-danger">*</span></label>
                                         <select class="form-control" name="status" id="status" required>
-                                            <option value="Pending">Pending</option>
+                                            <option value="{{ __('triangle.Pending')}}">{{ __('triangle.{{ __('triangle.{{ __('triangle.Pending')}}')}}')}}</option>
                                             <option value="Ordered">Ordered</option>
                                             <option value="Completed">Completed</option>
                                         </select>
@@ -71,7 +71,7 @@
                                 <div class="col-lg-4">
                                     <div class="from-group">
                                         <div class="form-group">
-                                            <label for="payment_method">Payment Method <span class="text-danger">*</span></label>
+                                            <label for="payment_method">{{ __('triangle.Payment Method')}} <span class="text-danger">*</span></label>
                                             <select class="form-control" name="payment_method" id="payment_method" required>
                                                 <option value="Cash">Cash</option>
                                                 <option value="Credit Card">Credit Card</option>
@@ -84,7 +84,7 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="paid_amount">Amount Paid <span class="text-danger">*</span></label>
+                                        <label for="paid_amount">{{ __('triangle.Amount Paid')}} <span class="text-danger">*</span></label>
                                         <div class="input-group">
                                             <input id="paid_amount" type="text" class="form-control" name="paid_amount" required>
                                             <div class="input-group-append">

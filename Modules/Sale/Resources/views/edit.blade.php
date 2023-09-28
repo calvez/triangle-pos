@@ -62,7 +62,7 @@
                                     <div class="form-group">
                                         <label for="status">Status <span class="text-danger">*</span></label>
                                         <select class="form-control" name="status" id="status" required>
-                                            <option {{ $sale->status == 'Pending' ? 'selected' : '' }} value="Pending">Pending</option>
+                                            <option {{ $sale->status == '{{ __('triangle.Pending')}}' ? 'selected' : '' }} value="{{ __('triangle.Pending')}}">{{ __('triangle.Pending')}}</option>
                                             <option {{ $sale->status == 'Shipped' ? 'selected' : '' }} value="Shipped">Shipped</option>
                                             <option {{ $sale->status == 'Completed' ? 'selected' : '' }} value="Completed">Completed</option>
                                         </select>
@@ -71,7 +71,7 @@
                                 <div class="col-lg-4">
                                     <div class="from-group">
                                         <div class="form-group">
-                                            <label for="payment_method">Payment Method <span class="text-danger">*</span></label>
+                                            <label for="payment_method">{{ __('triangle.Payment Method')}} <span class="text-danger">*</span></label>
                                             <input type="text" class="form-control" name="payment_method" required value="{{ $sale->payment_method }}" readonly>
                                         </div>
                                     </div>
