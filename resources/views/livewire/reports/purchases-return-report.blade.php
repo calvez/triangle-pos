@@ -25,9 +25,9 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <label>Supplier</label>
+                                    <label>Beszállító</label>
                                     <select wire:model.defer="supplier_id" class="form-control" name="supplier_id">
-                                        <option value="">Select Supplier</option>
+                                        <option value="">Select Beszállító</option>
                                         @foreach($suppliers as $supplier)
                                             <option value="{{ $supplier->id }}">{{ $supplier->supplier_name }}</option>
                                         @endforeach
@@ -86,7 +86,7 @@
                         <tr>
                             <th>Date</th>
                             <th>Reference</th>
-                            <th>Supplier</th>
+                            <th>Beszállító</th>
                             <th>Status</th>
                             <th>Total</th>
                             <th>Paid</th>

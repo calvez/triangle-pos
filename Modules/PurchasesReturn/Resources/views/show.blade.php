@@ -37,7 +37,7 @@
                             </div>
 
                             <div class="col-sm-4 mb-3 mb-md-0">
-                                <h5 class="mb-2 border-bottom pb-2">Supplier Info:</h5>
+                                <h5 class="mb-2 border-bottom pb-2">Beszállító Info:</h5>
                                 <div><strong>{{ $supplier->supplier_name }}</strong></div>
                                 <div>{{ $supplier->address }}</div>
                                 <div>Email: {{ $supplier->supplier_email }}</div>

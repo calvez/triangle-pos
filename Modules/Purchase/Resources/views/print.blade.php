@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="col-xs-4 mb-3 mb-md-0">
-                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Supplier Info:</h4>
+                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Beszállító Info:</h4>
                             <div><strong>{{ $supplier->supplier_name }}</strong></div>
                             <div>{{ $supplier->address }}</div>
                             <div>Email: {{ $supplier->supplier_email }}</div>

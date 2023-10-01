@@ -1,4 +1,4 @@
-@if ($data->status == '{{ __('triangle.Pending')}}')
+@if ($data->status == 'Pending')
     <span class="badge badge-info">
         {{ $data->status }}
     </span>

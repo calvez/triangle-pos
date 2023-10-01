@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Supplier Details')
+@section('title', 'Beszállító Details')
 
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
@@ -19,15 +19,15 @@
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <tr>
-                                    <th>Supplier Name</th>
+                                    <th>Beszállító neve</th>
                                     <td>{{ $supplier->supplier_name }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Supplier Email</th>
+                                    <th>Beszállító Email</th>
                                     <td>{{ $supplier->supplier_email }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Supplier Phone</th>
+                                    <th>Beszállító Phone</th>
                                     <td>{{ $supplier->supplier_phone }}</td>
                                 </tr>
                                 <tr>

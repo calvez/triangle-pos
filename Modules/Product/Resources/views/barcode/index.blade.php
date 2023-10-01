@@ -24,7 +24,7 @@
         <div class="row mt-4">
             <div class="col-md-12">
                 <div class="alert alert-info">
-                    <strong>NOTE: Product Code must be a number to generate barcodes!</strong>
+                    <strong> A kódnak számnak kell lennie a vonalkód generáláshoz</strong>
                 </div>
             </div>
             <div class="col-md-12">

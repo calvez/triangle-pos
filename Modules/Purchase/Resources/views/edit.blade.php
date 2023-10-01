@@ -36,9 +36,9 @@
                                 <div class="col-lg-4">
                                     <div class="from-group">
                                         <div class="form-group">
-                                            <label for="supplier_id">Supplier <span class="text-danger">*</span></label>
+                                            <label for="supplier_id">Beszállító <span class="text-danger">*</span></label>
                                             <select class="form-control" name="supplier_id" id="supplier_id" required>
-                                                @foreach(\Modules\People\Entities\Supplier::all() as $supplier)
+                                                @foreach(\Modules\People\Entities\Beszállító::all() as $supplier)
                                                     <option {{ $purchase->supplier_id == $supplier->id ? 'selected' : '' }} value="{{ $supplier->id }}">{{ $supplier->supplier_name }}</option>
                                                 @endforeach
                                             </select>
