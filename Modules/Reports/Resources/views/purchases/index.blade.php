@@ -11,6 +11,6 @@
 
 @section('content')
     <div class="container-fluid">
-        <livewire:reports.purchases-report :suppliers="\Modules\People\Entities\Beszállító::all()"/>
+        <livewire:reports.purchases-report :suppliers="\Modules\People\Entities\Supplierzállító::all()"/>
     </div>
 @endsection
