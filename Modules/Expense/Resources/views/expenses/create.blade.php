@@ -70,22 +70,3 @@
         </form>
     </div>
 @endsection
-
-@push('page_scripts')
-    <script src="{{ asset('js/jquery-mask-money.js') }}"></script>
-    <script>
-        $(document).ready(function () {
-            $('#amount').maskMoney({
-                prefix:'{{ settings()->currency->symbol }}',
-                thousands:'{{ settings()->currency->thousand_separator }}',
-                decimal:'{{ settings()->currency->decimal_separator }}',
-            });
-
-            $('#expense-form').submit(function () {
-                var amount = $('#amount').maskMoney('unmasked')[0];
-                $('#amount').val(amount);
-            });
-        });
-    </script>
-@endpush
-

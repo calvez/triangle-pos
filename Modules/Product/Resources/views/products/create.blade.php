@@ -215,27 +215,5 @@
         }
     </script>
 
-    <script src="{{ asset('js/jquery-mask-money.js') }}"></script>
-    <script>
-        $(document).ready(function () {
-            $('#product_cost').maskMoney({
-                prefix:'{{ settings()->currency->symbol }}',
-                thousands:'{{ settings()->currency->thousand_separator }}',
-                decimal:'{{ settings()->currency->decimal_separator }}',
-            });
-            $('#product_price').maskMoney({
-                prefix:'{{ settings()->currency->symbol }}',
-                thousands:'{{ settings()->currency->thousand_separator }}',
-                decimal:'{{ settings()->currency->decimal_separator }}',
-            });
-
-            $('#product-form').submit(function () {
-                var product_cost = $('#product_cost').maskMoney('unmasked')[0];
-                var product_price = $('#product_price').maskMoney('unmasked')[0];
-                $('#product_cost').val(product_cost);
-                $('#product_price').val(product_price);
-            });
-        });
-    </script>
 @endpush
 
