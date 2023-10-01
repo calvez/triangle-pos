@@ -62,7 +62,7 @@
                                     <div class="form-group">
                                         <label for="status">Status <span class="text-danger">*</span></label>
                                         <select class="form-control" name="status" id="status" required>
-                                            <option value="{{ __('triangle.Pending')}}">{{ __('triangle.{{ __('triangle.{{ __('triangle.Pending')}}')}}')}}</option>
+                                            <option value="{{ __('triangle.Pending')}}">{{('triangle.Pending')}}</option>
                                             <option value="Ordered">Ordered</option>
                                             <option value="Completed">Completed</option>
                                         </select>
