@@ -5,7 +5,7 @@
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
         <li class="breadcrumb-item"><a href="{{ route('home') }}">{{ __('triangle.Home') }}</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('suppliers.index') }}">Suppliers</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('suppliers.index') }}">Beszállítók</a></li>
         <li class="breadcrumb-item active">Details</li>
     </ol>
 @endsection

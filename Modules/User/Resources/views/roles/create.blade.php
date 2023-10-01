@@ -376,11 +376,11 @@
                                     </div>
                                 </div>
 
-                                <!-- Customers Permission -->
+                                <!-- Vásárlók Permission -->
                                 <div class="col-lg-4 col-md-6 mb-3">
                                     <div class="card h-100 border-0 shadow">
                                         <div class="card-header">
-                                            Customers
+                                            Vásárlók
                                         </div>
                                         <div class="card-body">
                                             <div class="row">
@@ -429,11 +429,11 @@
                                     </div>
                                 </div>
 
-                                <!-- Suppliers Permission -->
+                                <!-- Beszállítók Permission -->
                                 <div class="col-lg-4 col-md-6 mb-3">
                                     <div class="card h-100 border-0 shadow">
                                         <div class="card-header">
-                                            Suppliers
+                                            Beszállítók
                                         </div>
                                         <div class="card-body">
                                             <div class="row">
@@ -779,11 +779,11 @@
                                     </div>
                                 </div>
 
-                                <!-- Reports -->
+                                <!-- Riportok -->
                                 <div class="col-lg-4 col-md-6 mb-3">
                                     <div class="card h-100 border-0 shadow">
                                         <div class="card-header">
-                                            Reports
+                                            Riportok
                                         </div>
                                         <div class="card-body">
                                             <div class="row">
@@ -800,11 +800,11 @@
                                     </div>
                                 </div>
 
-                                <!-- Settings -->
+                                <!-- Beállítások -->
                                 <div class="col-lg-4 col-md-6 mb-3">
                                     <div class="card h-100 border-0 shadow">
                                         <div class="card-header">
-                                            Settings
+                                            Beállítások
                                         </div>
                                         <div class="card-body">
                                             <div class="row">
