@@ -28,7 +28,7 @@
                         @endif
                         <form method="post" action="{{ url('/password/email') }}">
                             @csrf
-                            <h1>Reset Your Password</h1>
+                            <h1>Törlés Your Password</h1>
                             <p class="text-muted">Enter Email to reset password</p>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">

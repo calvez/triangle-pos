@@ -22,7 +22,7 @@
                             </a>
                         </div>
                         <select wire:model="customer_id" id="customer_id" class="form-control">
-                            <option value="" selected>Select Customer</option>
+                            <option value="" selected>Vevő kiválasztása</option>
                             @foreach($customers as $customer)
                                 <option value="{{ $customer->id }}">{{ $customer->customer_name }}</option>
                             @endforeach
@@ -86,7 +86,7 @@
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <tr>
-                                <th>Order Tax ({{ $global_tax }}%)</th>
+                                <th>Megrendlés adó ({{ $global_tax }}%)</th>
                                 <td>(+) {{ format_currency(Cart::instance($cart_instance)->tax()) }}</td>
                             </tr>
                             <tr>
@@ -115,7 +115,7 @@
             <div class="form-row">
                 <div class="col-lg-4">
                     <div class="form-group">
-                        <label for="tax_percentage">Order Tax (%)</label>
+                        <label for="tax_percentage">Megrendlés adó (%)</label>
                         <input wire:model.lazy="global_tax" type="number" class="form-control" min="0" max="100" value="{{ $global_tax }}" required>
                     </div>
                 </div>
@@ -134,8 +134,8 @@
             </div>
 
             <div class="form-group d-flex justify-content-center flex-wrap mb-0">
-                <button wire:click="resetCart" type="button" class="btn btn-pill btn-danger mr-3"><i class="bi bi-x"></i> Reset</button>
-                <button wire:loading.attr="disabled" wire:click="proceed" type="button" class="btn btn-pill btn-primary" {{  $total_amount == 0 ? 'disabled' : '' }}><i class="bi bi-check"></i> Proceed</button>
+                <button wire:click="resetCart" type="button" class="btn btn-pill btn-danger mr-3"><i class="bi bi-x"></i> Törlés</button>
+                <button wire:loading.attr="disabled" wire:click="proceed" type="button" class="btn btn-pill btn-primary" {{  $total_amount == 0 ? 'disabled' : '' }}><i class="bi bi-check"></i> Tovább</button>
             </div>
         </div>
     </div>

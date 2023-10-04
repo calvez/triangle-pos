@@ -67,7 +67,7 @@ class Checkout extends Component
         if ($this->customer_id != null) {
             $this->dispatchBrowserEvent('showCheckoutModal');
         } else {
-            session()->flash('message', 'Please Select Customer!');
+            session()->flash('message', 'Please Vevő kiválasztása!');
         }
     }
 
@@ -195,7 +195,7 @@ class Checkout extends Component
             $this->updateCartOptions($row_id, $product_id, $cart_item, $discount_amount);
         }
 
-        session()->flash('discount_message'.$product_id, 'Discount added to the product!');
+        session()->flash('discount_message' . $product_id, 'Discount added to the product!');
     }
 
     public function calculate($product)

@@ -26,7 +26,7 @@
         @endcan
         <li class="c-sidebar-nav-item">
             <a class="c-sidebar-nav-link {{ request()->routeIs('products.index') ? 'c-active' : '' }}" href="{{ route('products.index') }}">
-                <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.All Products') }}
+                <i class="c-sidebar-nav-icon bi bi-journals" style="line-height: 1;"></i> {{ __('triangle.Összes termék') }}
             </a>
         </li>
         @can('print_barcodes')

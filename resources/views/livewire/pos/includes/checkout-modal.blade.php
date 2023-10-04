@@ -69,7 +69,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>Order Tax ({{ $global_tax }}%)</th>
+                                        <th>Megrendlés adó ({{ $global_tax }}%)</th>
                                         <td>(+) {{ format_currency(Cart::instance($cart_instance)->tax()) }}</td>
                                     </tr>
                                     <tr>

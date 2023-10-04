@@ -27,7 +27,7 @@
                                 <div class="form-group">
                                     <label>Customer</label>
                                     <select wire:model.defer="customer_id" class="form-control" name="customer_id">
-                                        <option value="">Select Customer</option>
+                                        <option value="">Vevő kiválasztása</option>
                                         @foreach($customers as $customer)
                                             <option value="{{ $customer->id }}">{{ $customer->customer_name }}</option>
                                         @endforeach

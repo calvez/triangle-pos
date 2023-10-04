@@ -11,6 +11,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/products/print-barcode', 'BarcodeController@printBarcode')->name('barcode.print');
     //Product
     Route::resource('products', 'ProductController');
-    //Product Category
+    //Termék kategória
     Route::resource('product-categories', 'CategoriesController')->except('create', 'show');
 });
