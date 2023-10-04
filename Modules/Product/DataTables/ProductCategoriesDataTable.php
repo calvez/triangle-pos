@@ -37,27 +37,27 @@ class ProductCategoriesDataTable extends DataTable
                 Button::make('excel')
                     ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                 Button::make('print')
-                    ->text('<i class="bi bi-printer-fill"></i> Print'),
+                    ->text('<i class="bi bi-printer-fill"></i> Nyomtatás'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Reset'),
+                    ->text('<i class="bi bi-x-circle"></i> Törlés'),
                 Button::make('reload')
-                    ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                    ->text('<i class="bi bi-arrow-repeat"></i> Frissítés')
             );
     }
 
     protected function getColumns()
     {
         return [
-            Column::make('category_code')
+            Column::make('category_code')->title('Kategória kód')
                 ->addClass('text-center'),
 
-            Column::make('category_name')
+            Column::make('category_name')->title('Kategória név')
                 ->addClass('text-center'),
 
-            Column::make('products_count')
+            Column::make('products_count')->title('Termékek száma')
                 ->addClass('text-center'),
 
-            Column::computed('action')
+            Column::computed('action')->title('Műveletek')->title('Műveletek')
                 ->exportable(false)
                 ->printable(false)
                 ->addClass('text-center'),
@@ -69,6 +69,6 @@ class ProductCategoriesDataTable extends DataTable
 
     protected function filename(): string
     {
-        return 'ProductCategories_'.date('YmdHis');
+        return 'ProductCategories_' . date('YmdHis');
     }
 }

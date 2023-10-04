@@ -49,9 +49,9 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label>Payment Status</label>
+                                    <label>Fizetés állapota</label>
                                     <select wire:model.defer="payment_status" class="form-control" name="payment_status">
-                                        <option value="">Select Payment Status</option>
+                                        <option value="">Fizetési állapot kiválasztása</option>
                                         <option value="Paid">Paid</option>
                                         <option value="Unpaid">Unpaid</option>
                                         <option value="Partial">Partial</option>
@@ -91,7 +91,7 @@
                             <th>Total</th>
                             <th>Paid</th>
                             <th>Due</th>
-                            <th>Payment Status</th>
+                            <th>Fizetés állapota</th>
                         </tr>
                         </thead>
                         <tbody>

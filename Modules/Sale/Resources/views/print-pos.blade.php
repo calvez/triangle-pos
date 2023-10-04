@@ -83,13 +83,13 @@
 
             @if($sale->tax_percentage)
                 <tr>
-                    <th colspan="2" style="text-align:left">Tax ({{ $sale->tax_percentage }}%)</th>
+                    <th colspan="2" style="text-align:left">Adó típusa({{ $sale->tax_percentage }}%)</th>
                     <th style="text-align:right">{{ format_currency($sale->tax_amount) }}</th>
                 </tr>
             @endif
             @if($sale->discount_percentage)
                 <tr>
-                    <th colspan="2" style="text-align:left">Discount ({{ $sale->discount_percentage }}%)</th>
+                    <th colspan="2" style="text-align:left">Kedvezmény ({{ $sale->discount_percentage }}%)</th>
                     <th style="text-align:right">{{ format_currency($sale->discount_amount) }}</th>
                 </tr>
             @endif
@@ -100,7 +100,7 @@
                 </tr>
             @endif
             <tr>
-                <th colspan="2" style="text-align:left">Grand Total</th>
+                <th colspan="2" style="text-align:left">Mindösszesen</th>
                 <th style="text-align:right">{{ format_currency($sale->total_amount) }}</th>
             </tr>
             </tbody>
@@ -109,10 +109,10 @@
             <tbody>
                 <tr style="background-color:#ddd;">
                     <td class="centered" style="padding: 5px;">
-                        Paid By: {{ $sale->payment_method }}
+                        Fizetve: {{ $sale->payment_method }}
                     </td>
                     <td class="centered" style="padding: 5px;">
-                        Amount: {{ format_currency($sale->paid_amount) }}
+                        Összeg: {{ format_currency($sale->paid_amount) }}
                     </td>
                 </tr>
                 <tr style="border-bottom: 0;">

@@ -19,13 +19,13 @@ class ProductDataTable extends DataTable
             ->addColumn('product_image', function ($data) {
                 $url = $data->getFirstMediaUrl('images', 'thumb');
 
-                return '<img src="'.$url.'" border="0" width="50" class="img-thumbnail" align="center"/>';
+                return '<img src="' . $url . '" border="0" width="50" class="img-thumbnail" align="center"/>';
             })
             ->addColumn('product_price', function ($data) {
                 return format_currency($data->product_price);
             })
             ->addColumn('product_quantity', function ($data) {
-                return $data->product_quantity.' '.$data->product_unit;
+                return $data->product_quantity . ' ' . $data->product_unit;
             })
             ->rawColumns(['product_image']);
     }
@@ -49,11 +49,11 @@ class ProductDataTable extends DataTable
                 Button::make('excel')
                     ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                 Button::make('print')
-                    ->text('<i class="bi bi-printer-fill"></i> Print'),
+                    ->text('<i class="bi bi-printer-fill"></i> Nyomtatás'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Reset'),
+                    ->text('<i class="bi bi-x-circle"></i> Törlés'),
                 Button::make('reload')
-                    ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                    ->text('<i class="bi bi-arrow-repeat"></i> Frissítés')
             );
     }
 
@@ -61,30 +61,30 @@ class ProductDataTable extends DataTable
     {
         return [
             Column::computed('product_image')
-                ->title('Image')
+                ->title('Kép')
                 ->className('text-center align-middle'),
 
             Column::make('product_name')
-                ->title('Name')
+                ->title('Név')
                 ->className('text-center align-middle'),
 
             Column::make('product_code')
-                ->title('Code')
+                ->title('Kód')
                 ->className('text-center align-middle'),
 
             Column::computed('product_price')
-                ->title('Price')
+                ->title('Ár')
                 ->className('text-center align-middle'),
 
             Column::computed('product_quantity')
-                ->title('Quantity')
+                ->title('Mennyiség')
                 ->className('text-center align-middle'),
 
             Column::make('category.category_name')
-                ->title('Category')
+                ->title('Kategória')
                 ->className('text-center align-middle'),
 
-            Column::computed('action')
+            Column::computed('action')->title('Műveletek')->title('Műveletek')
                 ->exportable(false)
                 ->printable(false)
                 ->className('text-center align-middle'),
@@ -99,6 +99,6 @@ class ProductDataTable extends DataTable
      */
     protected function filename(): string
     {
-        return 'Product_'.date('YmdHis');
+        return 'Product_' . date('YmdHis');
     }
 }

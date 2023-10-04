@@ -33,7 +33,7 @@ class UsersDataTable extends DataTable
             ->addColumn('image', function ($data) {
                 $url = $data->getFirstMediaUrl('avatars');
 
-                return '<img src="'.$url.'" style="width:50px;height:50px;" class="img-thumbnail rounded-circle"/>';
+                return '<img src="' . $url . '" style="width:50px;height:50px;" class="img-thumbnail rounded-circle"/>';
             })
             ->rawColumns(['image', 'status']);
     }
@@ -61,11 +61,11 @@ class UsersDataTable extends DataTable
                 Button::make('excel')
                     ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                 Button::make('print')
-                    ->text('<i class="bi bi-printer-fill"></i> Print'),
+                    ->text('<i class="bi bi-printer-fill"></i> Nyomtatás'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Reset'),
+                    ->text('<i class="bi bi-x-circle"></i> Törlés'),
                 Button::make('reload')
-                    ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                    ->text('<i class="bi bi-arrow-repeat"></i> Frissítés')
             );
     }
 
@@ -84,10 +84,10 @@ class UsersDataTable extends DataTable
             Column::computed('role')
                 ->className('text-center align-middle'),
 
-            Column::computed('status')
+            Column::computed('status')->title('Stárusz')
                 ->className('text-center align-middle'),
 
-            Column::computed('action')
+            Column::computed('action')->title('Műveletek')
                 ->exportable(false)
                 ->printable(false)
                 ->className('text-center align-middle'),
@@ -99,6 +99,6 @@ class UsersDataTable extends DataTable
 
     protected function filename(): string
     {
-        return 'Users_'.date('YmdHis');
+        return 'Users_' . date('YmdHis');
     }
 }

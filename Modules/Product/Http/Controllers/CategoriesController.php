@@ -31,7 +31,7 @@ class CategoriesController extends Controller
             'category_name' => $request->category_name,
         ]);
 
-        toast('Product Category Created!', 'success');
+        toast('Termékkategória lérehozva!', 'success');
 
         return redirect()->back();
     }
@@ -50,7 +50,7 @@ class CategoriesController extends Controller
         abort_if(Gate::denies('access_product_categories'), 403);
 
         $request->validate([
-            'category_code' => 'required|unique:categories,category_code,'.$id,
+            'category_code' => 'required|unique:categories,category_code,' . $id,
             'category_name' => 'required',
         ]);
 
@@ -59,7 +59,7 @@ class CategoriesController extends Controller
             'category_name' => $request->category_name,
         ]);
 
-        toast('Product Category Updated!', 'info');
+        toast('Termékkategória frissítve!', 'info');
 
         return redirect()->route('product-categories.index');
     }
@@ -76,7 +76,7 @@ class CategoriesController extends Controller
 
         $category->delete();
 
-        toast('Product Category Deleted!', 'warning');
+        toast('Termékkategória törölve!', 'warning');
 
         return redirect()->route('product-categories.index');
     }

@@ -34,9 +34,9 @@
                     <table class="table">
                         <thead>
                         <tr class="text-center">
-                            <th class="align-middle">Product</th>
-                            <th class="align-middle">Price</th>
-                            <th class="align-middle">Quantity</th>
+                            <th class="align-middle">Termék</th>
+                            <th class="align-middle">Ár</th>
+                            <th class="align-middle">Mennyiség</th>
                             <th class="align-middle">Action</th>
                         </tr>
                         </thead>
@@ -71,7 +71,7 @@
                             <tr>
                                 <td colspan="8" class="text-center">
                         <span class="text-danger">
-                            Please search & select products!
+                            Kérlek válassz terméket!
                         </span>
                                 </td>
                             </tr>
@@ -90,7 +90,7 @@
                                 <td>(+) {{ format_currency(Cart::instance($cart_instance)->tax()) }}</td>
                             </tr>
                             <tr>
-                                <th>Discount ({{ $global_discount }}%)</th>
+                                <th>Kedvezmény ({{ $global_discount }}%)</th>
                                 <td>(-) {{ format_currency(Cart::instance($cart_instance)->discount()) }}</td>
                             </tr>
                             <tr>
@@ -99,7 +99,7 @@
                                 <td>(+) {{ format_currency($shipping) }}</td>
                             </tr>
                             <tr class="text-primary">
-                                <th>Grand Total</th>
+                                <th>Mindösszesen</th>
                                 @php
                                     $total_with_shipping = Cart::instance($cart_instance)->total() + (float) $shipping
                                 @endphp
@@ -121,7 +121,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="form-group">
-                        <label for="discount_percentage">Discount (%)</label>
+                        <label for="discount_percentage">Kedvezmény (%)</label>
                         <input wire:model.lazy="global_discount" type="number" class="form-control" min="0" max="100" value="{{ $global_discount }}" required>
                     </div>
                 </div>

@@ -52,28 +52,28 @@ class PurchaseDataTable extends DataTable
                 Button::make('excel')
                     ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                 Button::make('print')
-                    ->text('<i class="bi bi-printer-fill"></i> Print'),
+                    ->text('<i class="bi bi-printer-fill"></i> Nyomtatás'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Reset'),
+                    ->text('<i class="bi bi-x-circle"></i> Törlés'),
                 Button::make('reload')
-                    ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                    ->text('<i class="bi bi-arrow-repeat"></i> Frissítés')
             );
     }
 
     protected function getColumns()
     {
         return [
-            Column::make('reference')
+            Column::make('reference')->title('Referencia')
                 ->className('text-center align-middle'),
 
             Column::make('supplier_name')
                 ->title('Supplier')
                 ->className('text-center align-middle'),
 
-            Column::computed('status')
+            Column::computed('status')->title('Stárusz')
                 ->className('text-center align-middle'),
 
-            Column::computed('total_amount')
+            Column::computed('total_amount')->title('Végösszeg')
                 ->className('text-center align-middle'),
 
             Column::computed('paid_amount')
@@ -85,7 +85,7 @@ class PurchaseDataTable extends DataTable
             Column::computed('payment_status')
                 ->className('text-center align-middle'),
 
-            Column::computed('action')
+            Column::computed('action')->title('Műveletek')
                 ->exportable(false)
                 ->printable(false)
                 ->className('text-center align-middle'),
@@ -97,6 +97,6 @@ class PurchaseDataTable extends DataTable
 
     protected function filename(): string
     {
-        return 'Purchase_'.date('YmdHis');
+        return 'Purchase_' . date('YmdHis');
     }
 }

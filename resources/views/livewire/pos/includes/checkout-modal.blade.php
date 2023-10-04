@@ -53,7 +53,7 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="note">Note (If Needed)</label>
+                                <label for="note">Megjegyzés (ha szükséges)</label>
                                 <textarea name="note" id="note" rows="5" class="form-control"></textarea>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                                         <td>(+) {{ format_currency(Cart::instance($cart_instance)->tax()) }}</td>
                                     </tr>
                                     <tr>
-                                        <th>Discount ({{ $global_discount }}%)</th>
+                                        <th>Kedvezmény ({{ $global_discount }}%)</th>
                                         <td>(-) {{ format_currency(Cart::instance($cart_instance)->discount()) }}</td>
                                     </tr>
                                     <tr>
@@ -82,7 +82,7 @@
                                         <td>(+) {{ format_currency($shipping) }}</td>
                                     </tr>
                                     <tr class="text-primary">
-                                        <th>Grand Total</th>
+                                        <th>Mindösszesen</th>
                                         @php
                                             $total_with_shipping = Cart::instance($cart_instance)->total() + (float) $shipping
                                         @endphp

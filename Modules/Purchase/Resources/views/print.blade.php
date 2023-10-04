@@ -45,7 +45,7 @@
                                 Status: <strong>{{ $purchase->status }}</strong>
                             </div>
                             <div>
-                                Payment Status: <strong>{{ $purchase->payment_status }}</strong>
+                                Fizetés állapota: <strong>{{ $purchase->payment_status }}</strong>
                             </div>
                         </div>
 
@@ -55,12 +55,12 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th class="align-middle">Product</th>
-                                <th class="align-middle">Net Unit Price</th>
-                                <th class="align-middle">Quantity</th>
-                                <th class="align-middle">Discount</th>
-                                <th class="align-middle">Tax</th>
-                                <th class="align-middle">Sub Total</th>
+                                <th class="align-middle">Termék</th>
+                                <th class="align-middle">Netto egységár</th>
+                                <th class="align-middle">Mennyiség</th>
+                                <th class="align-middle">Kedvezmény</th>
+                                <th class="align-middle">Adó</th>
+                                <th class="align-middle">Részösszeg</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -100,11 +100,11 @@
                             <table class="table">
                                 <tbody>
                                 <tr>
-                                    <td class="left"><strong>Discount ({{ $purchase->discount_percentage }}%)</strong></td>
+                                    <td class="left"><strong>Kedvezmény ({{ $purchase->discount_percentage }}%)</strong></td>
                                     <td class="right">{{ format_currency($purchase->discount_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Tax ({{ $purchase->tax_percentage }}%)</strong></td>
+                                    <td class="left"><strong>Adó típusa({{ $purchase->tax_percentage }}%)</strong></td>
                                     <td class="right">{{ format_currency($purchase->tax_amount) }}</td>
                                 </tr>
                                 <tr>
@@ -112,7 +112,7 @@
                                     <td class="right">{{ format_currency($purchase->shipping_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Grand Total</strong></td>
+                                    <td class="left"><strong>Mindösszesen</strong></td>
                                     <td class="right"><strong>{{ format_currency($purchase->total_amount) }}</strong></td>
                                 </tr>
                                 </tbody>

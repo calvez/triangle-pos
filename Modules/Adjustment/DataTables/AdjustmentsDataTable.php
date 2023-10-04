@@ -37,28 +37,29 @@ class AdjustmentsDataTable extends DataTable
                 Button::make('excel')
                     ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                 Button::make('print')
-                    ->text('<i class="bi bi-printer-fill"></i> Print'),
+                    ->text('<i class="bi bi-printer-fill"></i> Nyomtatás'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Reset'),
+                    ->text('<i class="bi bi-x-circle"></i> Törlés'),
                 Button::make('reload')
-                    ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                    ->text('<i class="bi bi-arrow-repeat"></i> Frissítés')
             );
     }
 
     protected function getColumns()
     {
         return [
-            Column::make('date')
+            Column::make('date')->title('Dátum')->title('Dátum')
                 ->className('text-center align-middle'),
 
-            Column::make('reference')
-                ->className('text-center align-middle'),
+            Column::make('reference')->title('Referencia')
+                ->className('text-center align-middle')
+                ->title('Referencia'),
 
             Column::make('adjusted_products_count')
                 ->title('Termék')
                 ->className('text-center align-middle'),
 
-            Column::computed('action')
+            Column::computed('action')->title('Műveletek')
                 ->exportable(false)
                 ->printable(false)
                 ->className('text-center align-middle'),

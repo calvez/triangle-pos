@@ -70,7 +70,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="note">Note (If Needed)</label>
+                                <label for="note">Megjegyzés (ha szükséges)</label>
                                 <textarea name="note" id="note" rows="5" class="form-control"></textarea>
                             </div>
 

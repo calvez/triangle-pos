@@ -104,13 +104,13 @@
                             <div class="form-row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="product_order_tax">Tax (%)</label>
+                                        <label for="product_order_tax">Adó %</label>
                                         <input type="number" class="form-control" name="product_order_tax" value="{{ old('product_order_tax') }}" min="0">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="product_tax_type">Tax type</label>
+                                        <label for="product_tax_type">Adó típuse</label>
                                         <select class="form-control" name="product_tax_type" id="product_tax_type">
                                             <option value="" selected >Select Tax Type</option>
                                             <option value="1">Exclusive</option>
@@ -132,7 +132,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="product_note">Note</label>
+                                <label for="product_note">Megjegyzés</label>
                                 <textarea name="product_note" id="product_note" rows="4 " class="form-control"></textarea>
                             </div>
                         </div>

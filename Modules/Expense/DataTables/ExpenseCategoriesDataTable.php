@@ -37,11 +37,11 @@ class ExpenseCategoriesDataTable extends DataTable
                 Button::make('excel')
                     ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                 Button::make('print')
-                    ->text('<i class="bi bi-printer-fill"></i> Print'),
+                    ->text('<i class="bi bi-printer-fill"></i> Nyomtatás'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Reset'),
+                    ->text('<i class="bi bi-x-circle"></i> Törlés'),
                 Button::make('reload')
-                    ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                    ->text('<i class="bi bi-arrow-repeat"></i> Frissítés')
             );
     }
 
@@ -57,7 +57,7 @@ class ExpenseCategoriesDataTable extends DataTable
             Column::make('expenses_count')
                 ->addClass('text-center'),
 
-            Column::computed('action')
+            Column::computed('action')->title('Műveletek')
                 ->exportable(false)
                 ->printable(false)
                 ->addClass('text-center'),
@@ -69,6 +69,6 @@ class ExpenseCategoriesDataTable extends DataTable
 
     protected function filename(): string
     {
-        return 'ExpenseCategories_'.date('YmdHis');
+        return 'ExpenseCategories_' . date('YmdHis');
     }
 }

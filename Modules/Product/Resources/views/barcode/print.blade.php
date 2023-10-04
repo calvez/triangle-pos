@@ -20,7 +20,7 @@
                     {!! $barcode !!}
                 </div>
                 <p style="font-size: 15px;color: #000;font-weight: bold;">
-                    Price:: {{ format_currency($price) }}</p>
+                    Ár:: {{ format_currency($price) }}</p>
             </div>
         @endforeach
     </div>

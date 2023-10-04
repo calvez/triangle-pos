@@ -15,10 +15,10 @@
                 <table class="table table-bordered mb-0">
                     <thead>
                     <tr class="align-middle">
-                        <th class="align-middle">Product Name</th>
-                        <th class="align-middle">Code</th>
+                        <th class="align-middle">Termék neve</th>
+                        <th class="align-middle">Kód</th>
                         <th class="align-middle">
-                            Quantity <i class="bi bi-question-circle-fill text-info" data-toggle="tooltip" data-placement="top" title="Max Quantity: 100"></i>
+                            Mennyiség <i class="bi bi-question-circle-fill text-info" data-toggle="tooltip" data-placement="top" title="Max Quantity: 100"></i>
                         </th>
                     </tr>
                     </thead>
@@ -41,7 +41,7 @@
             </div>
             <div class="mt-3">
                 <button wire:click="generateBarcodes({{ $product }}, {{ $quantity }})" type="button" class="btn btn-primary">
-                    <i class="bi bi-upc-scan"></i> Generate Barcodes
+                    <i class="bi bi-upc-scan"></i> Vonalkód generálása
                 </button>
             </div>
         </div>
@@ -59,7 +59,7 @@
         <div class="text-right mb-3">
             <button wire:click="getPdf" wire:loading.attr="disabled" type="button" class="btn btn-primary">
                 <span wire:loading wire:target="getPdf" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                <i wire:loading.remove wire:target="getPdf" class="bi bi-file-earmark-pdf"></i> Download PDF
+                <i wire:loading.remove wire:target="getPdf" class="bi bi-file-earmark-pdf"></i> PDF letöltése
             </button>
         </div>
         <div class="card">
@@ -74,7 +74,7 @@
                                 {!! $barcode !!}
                             </div>
                             <p style="font-size: 15px;color: #000;">
-                                Price:: {{ format_currency($product->product_price) }}
+                                Ár: {{ format_currency($product->product_price) }}
                             </p>
                         </div>
                     @endforeach

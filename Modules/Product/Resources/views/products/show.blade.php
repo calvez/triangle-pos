@@ -24,11 +24,11 @@
                         <div class="table-responsive">
                             <table class="table table-bordered table-striped mb-0">
                                 <tr>
-                                    <th>Product Code</th>
+                                    <th>Termékkód</th>
                                     <td>{{ $product->product_code }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Barcode Symbology</th>
+                                    <th>Vonalkód típus</th>
                                     <td>{{ $product->product_barcode_symbology }}</td>
                                 </tr>
                                 <tr>
@@ -36,38 +36,38 @@
                                     <td>{{ $product->product_name }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Category</th>
+                                    <th>Kategória</th>
                                     <td>{{ $product->category->category_name }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Cost</th>
+                                    <th>Költség</th>
                                     <td>{{ format_currency($product->product_cost) }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Price</th>
+                                    <th>Ár</th>
                                     <td>{{ format_currency($product->product_price) }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Quantity</th>
+                                    <th>Mennyiség</th>
                                     <td>{{ $product->product_quantity . ' ' . $product->product_unit }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Stock Worth</th>
+                                    <th>Árukészlet értéke</th>
                                     <td>
                                         COST:: {{ format_currency($product->product_cost * $product->product_quantity) }} /
                                         PRICE:: {{ format_currency($product->product_price * $product->product_quantity) }}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Alert Quantity</th>
+                                    <th>Készlet riszatás</th>
                                     <td>{{ $product->product_stock_alert }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Tax (%)</th>
+                                    <th>Adó %</th>
                                     <td>{{ $product->product_order_tax ?? 'N/A' }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Tax Type</th>
+                                    <th>Adó típus</th>
                                     <td>
                                         @if($product->product_tax_type == 1)
                                             Exclusive
@@ -79,7 +79,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Note</th>
+                                    <th>Megjegyzés</th>
                                     <td>{{ $product->product_note ?? 'N/A' }}</td>
                                 </tr>
                             </table>

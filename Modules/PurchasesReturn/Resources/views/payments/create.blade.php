@@ -77,7 +77,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="note">Note</label>
+                                <label for="note">Megjegyzés</label>
                                 <textarea class="form-control" rows="4" name="note">{{ old('note') }}</textarea>
                             </div>
 

@@ -43,7 +43,7 @@
                         </div>
                         <livewire:adjustment.product-table />
                         <div class="form-group">
-                            <label for="note">{{ __('triangle.Note (If Needed)') }}</label>
+                            <label for="note">{{ __('triangle.Megjegyzés (ha szükséges)') }}</label>
                             <textarea name="note" id="note" rows="5" class="form-control"></textarea>
                         </div>
                         <div class="mt-3">

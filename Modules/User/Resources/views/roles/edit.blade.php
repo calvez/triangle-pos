@@ -188,7 +188,7 @@
                                                         <input type="checkbox" class="custom-control-input"
                                                                id="access_product_categories" name="permissions[]"
                                                                value="access_product_categories" {{ $role->hasPermissionTo('access_product_categories') ? 'checked' : '' }}>
-                                                        <label class="custom-control-label" for="access_product_categories">Category</label>
+                                                        <label class="custom-control-label" for="access_product_categories">Kategória</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
@@ -371,7 +371,7 @@
                                                         <input type="checkbox" class="custom-control-input"
                                                                id="access_expense_categories" name="permissions[]"
                                                                value="access_expense_categories" {{ $role->hasPermissionTo('access_expense_categories') ? 'checked' : '' }}>
-                                                        <label class="custom-control-label" for="access_expense_categories">Category</label>
+                                                        <label class="custom-control-label" for="access_expense_categories">Kategória</label>
                                                     </div>
                                                 </div>
                                             </div>

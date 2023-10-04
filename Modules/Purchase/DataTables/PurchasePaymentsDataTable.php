@@ -40,21 +40,21 @@ class PurchasePaymentsDataTable extends DataTable
                 Button::make('excel')
                     ->text('<i class="bi bi-file-earmark-excel-fill"></i> Excel'),
                 Button::make('print')
-                    ->text('<i class="bi bi-printer-fill"></i> Print'),
+                    ->text('<i class="bi bi-printer-fill"></i> Nyomtatás'),
                 Button::make('reset')
-                    ->text('<i class="bi bi-x-circle"></i> Reset'),
+                    ->text('<i class="bi bi-x-circle"></i> Törlés'),
                 Button::make('reload')
-                    ->text('<i class="bi bi-arrow-repeat"></i> Reload')
+                    ->text('<i class="bi bi-arrow-repeat"></i> Frissítés')
             );
     }
 
     protected function getColumns()
     {
         return [
-            Column::make('date')
+            Column::make('date')->title('Dátum')
                 ->className('align-middle text-center'),
 
-            Column::make('reference')
+            Column::make('reference')->title('Referencia')
                 ->className('align-middle text-center'),
 
             Column::computed('amount')
@@ -63,7 +63,7 @@ class PurchasePaymentsDataTable extends DataTable
             Column::make('payment_method')
                 ->className('align-middle text-center'),
 
-            Column::computed('action')
+            Column::computed('action')->title('Műveletek')
                 ->exportable(false)
                 ->printable(false)
                 ->className('align-middle text-center'),
@@ -75,6 +75,6 @@ class PurchasePaymentsDataTable extends DataTable
 
     protected function filename(): string
     {
-        return 'PurchasePayments_'.date('YmdHis');
+        return 'PurchasePayments_' . date('YmdHis');
     }
 }

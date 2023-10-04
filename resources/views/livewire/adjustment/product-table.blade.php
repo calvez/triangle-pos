@@ -74,7 +74,7 @@
                 <tr>
                     <td colspan="7" class="text-center">
                         <span class="text-danger">
-                            {{ __('triangle.Please search & select products!') }}
+                            {{ __('triangle.Kérlek válassz terméket!') }}
                         </span>
                     </td>
                 </tr>
