@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Create Purchase Return')
+@section('title', 'Új vásárlási visszatérítés')
 
 @section('breadcrumb')
     <ol class="breadcrumb border-0 m-0">
         <li class="breadcrumb-item"><a href="{{ route('home') }}">{{ __('triangle.Home') }}</a></li>
-        <li class="breadcrumb-item"><a href="{{ route('purchase-returns.index') }}">Purchase Returns</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('purchase-returns.index') }}">Vásárlási visszatérítés</a></li>
         <li class="breadcrumb-item active">{{ __('triangle.Add') }}</li>
     </ol>
 @endsection
@@ -28,7 +28,7 @@
                             <div class="form-row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="reference">Reference <span class="text-danger">*</span></label>
+                                        <label for="reference">Referencia <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="reference" required readonly value="PRRN">
                                     </div>
                                 </div>
@@ -47,7 +47,7 @@
                                 <div class="col-lg-4">
                                     <div class="from-group">
                                         <div class="form-group">
-                                            <label for="date">Date <span class="text-danger">*</span></label>
+                                            <label for="date">Dátum <span class="text-danger">*</span></label>
                                             <input type="date" class="form-control" name="date" required value="{{ now()->format('Y-m-d') }}">
                                         </div>
                                     </div>
@@ -59,11 +59,11 @@
                             <div class="form-row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="status">Status <span class="text-danger">*</span></label>
+                                        <label for="status">Státusz <span class="text-danger">*</span></label>
                                         <select class="form-control" name="status" id="status" required>
-                                            <option value="{{ __('triangle.Pending')}}">{{ __('triangle.Pending')}}</option>
-                                            <option value="Shipped">Shipped</option>
-                                            <option value="Completed">Completed</option>
+                                            <option value="Pending">Folyamatban</option>
+                                            <option value="Shipped">Kiszállítva</option>
+                                            <option value="Completed">Teljesítve</option>
                                         </select>
                                     </div>
                                 </div>
@@ -72,18 +72,18 @@
                                         <div class="form-group">
                                             <label for="payment_method">{{ __('triangle.Payment Method')}} <span class="text-danger">*</span></label>
                                             <select class="form-control" name="payment_method" id="payment_method" required>
-                                                <option value="Cash">Cash</option>
+                                                <option value="Cash">Készpénz</option>
                                                 <option value="Credit Card">Credit Card</option>
-                                                <option value="Bank Transfer">Bank Transfer</option>
-                                                <option value="Cheque">Cheque</option>
-                                                <option value="Other">Other</option>
+                                                <option value="Bank Transfer">Banki átutalás</option>
+                                                <option value="Cheque">Csekk</option>
+                                                <option value="Other">Egyéb</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="paid_amount">Amount Received <span class="text-danger">*</span></label>
+                                        <label for="paid_amount">Összeg Received <span class="text-danger">*</span></label>
                                         <div class="input-group">
                                             <input id="paid_amount" type="text" class="form-control" name="paid_amount" required>
                                             <div class="input-group-append">
@@ -103,7 +103,7 @@
 
                             <div class="mt-3">
                                 <button type="submit" class="btn btn-primary">
-                                    Create Purchase Return <i class="bi bi-check"></i>
+                                    Új visszatérítés<i class="bi bi-check"></i>
                                 </button>
                             </div>
                         </form>

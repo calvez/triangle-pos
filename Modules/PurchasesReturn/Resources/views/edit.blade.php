@@ -29,7 +29,7 @@
                             <div class="form-row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="reference">Reference <span class="text-danger">*</span></label>
+                                        <label for="reference">Referencia <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="reference" required value="{{ $purchase_return->reference }}" readonly>
                                     </div>
                                 </div>
@@ -62,9 +62,9 @@
                                     <div class="form-group">
                                         <label for="status">Status <span class="text-danger">*</span></label>
                                         <select class="form-control" name="status" id="status" required>
-                                            <option {{ $purchase_return->status == '{{ __('triangle.Pending')}}' ? 'selected' : '' }} value="{{ __('triangle.Pending')}}">{{ __('triangle.Pending')}}</option>
-                                            <option {{ $purchase_return->status == 'Shipped' ? 'selected' : '' }} value="Shipped">Shipped</option>
-                                            <option {{ $purchase_return->status == 'Completed' ? 'selected' : '' }} value="Completed">Completed</option>
+                                            <option {{ $purchase_return->status == 'Pending' ? 'selected' : '' }} value="Pending"></option>
+                                            <option {{ $purchase_return->status == 'Shipped' ? 'selected' : '' }} value="Shipped">Kiszállítva</option>
+                                            <option {{ $purchase_return->status == 'Completed' ? 'selected' : '' }} value="Completed">Teljesítve</option>
                                         </select>
                                     </div>
                                 </div>
@@ -91,7 +91,7 @@
 
                             <div class="mt-3">
                                 <button type="submit" class="btn btn-primary">
-                                    Update Purchase Return <i class="bi bi-check"></i>
+                                    Visszatérítés frissítése<i class="bi bi-check"></i>
                                 </button>
                             </div>
                         </form>

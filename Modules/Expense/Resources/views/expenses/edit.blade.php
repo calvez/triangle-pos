@@ -28,7 +28,7 @@
                             <div class="form-row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="reference">Reference <span class="text-danger">*</span></label>
+                                        <label for="reference">Referencia <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="reference" required value="{{ $expense->reference }}" readonly>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                             <div class="form-row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="category_id">Category <span class="text-danger">*</span></label>
+                                        <label for="category_id">Kategória <span class="text-danger">*</span></label>
                                         <select name="category_id" id="category_id" class="form-control" required>
                                             @foreach(\Modules\Expense\Entities\ExpenseCategory::all() as $category)
                                                 <option {{ $category->id == $expense->category_id ? 'selected' : '' }} value="{{ $category->id }}">{{ $category->category_name }}</option>
@@ -53,14 +53,14 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="amount">Amount <span class="text-danger">*</span></label>
+                                        <label for="amount">Összeg <span class="text-danger">*</span></label>
                                         <input id="amount" type="text" class="form-control" name="amount" required value="{{ $expense->amount }}">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="details">Details</label>
+                                <label for="details">Részletek </label>
                                 <textarea class="form-control" rows="6" name="details">{{ $expense->details }}</textarea>
                             </div>
                         </div>

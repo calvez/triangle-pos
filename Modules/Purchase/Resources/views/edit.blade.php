@@ -29,7 +29,7 @@
                             <div class="form-row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="reference">Reference <span class="text-danger">*</span></label>
+                                        <label for="reference">Referencia <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="reference" required value="{{ $purchase->reference }}" readonly>
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@
                                     <div class="form-group">
                                         <label for="status">Status <span class="text-danger">*</span></label>
                                         <select class="form-control" name="status" id="status" required>
-                                            <option {{ $purchase->status == '{{ __('triangle.Pending')}}' ? 'selected' : '' }} value="Pending">Pending</option>
+                                            <option {{ $purchase->status == 'pending' ? 'selected' : '' }} value="Pending">Pending</option>
                                             <option {{ $purchase->status == 'Ordered' ? 'selected' : '' }} value="Ordered">Ordered</option>
                                             <option {{ $purchase->status == 'Completed' ? 'selected' : '' }} value="Completed">Completed</option>
                                         </select>

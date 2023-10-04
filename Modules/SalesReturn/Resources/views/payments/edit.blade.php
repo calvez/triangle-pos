@@ -29,13 +29,13 @@
                             <div class="form-row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="reference">Reference <span class="text-danger">*</span></label>
+                                        <label for="reference">Referencia <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="reference" required readonly value="{{ $saleReturnPayment->reference }}">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="date">Date <span class="text-danger">*</span></label>
+                                        <label for="date">Dátum <span class="text-danger">*</span></label>
                                         <input type="date" class="form-control" name="date" required value="{{ $saleReturnPayment->getAttributes()['date'] }}">
                                     </div>
                                 </div>
@@ -44,13 +44,13 @@
                             <div class="form-row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="due_amount">Due Amount <span class="text-danger">*</span></label>
+                                        <label for="due_amount">Hátralék<span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="due_amount" required value="{{ format_currency($sale_return->due_amount) }}" readonly>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="amount">Amount <span class="text-danger">*</span></label>
+                                        <label for="amount">Összeg <span class="text-danger">*</span></label>
                                         <div class="input-group">
                                             <input id="amount" type="text" class="form-control" name="amount" required value="{{ old('amount') ?? $saleReturnPayment->amount }}">
                                             <div class="input-group-append">
@@ -66,11 +66,10 @@
                                         <div class="form-group">
                                             <label for="payment_method">{{ __('triangle.Payment Method')}} <span class="text-danger">*</span></label>
                                             <select class="form-control" name="payment_method" id="payment_method" required>
-                                                <option {{ $saleReturnPayment->payment_method == 'Cash' ? 'selected' : '' }} value="Cash">Cash</option>
-                                                <option {{ $saleReturnPayment->payment_method == 'Credit Card' ? 'selected' : '' }} value="Credit Card">Credit Card</option>
-                                                <option {{ $saleReturnPayment->payment_method == 'Bank Transfer' ? 'selected' : '' }} value="Bank Transfer">Bank Transfer</option>
-                                                <option {{ $saleReturnPayment->payment_method == 'Cheque' ? 'selected' : '' }} value="Cheque">Cheque</option>
-                                                <option {{ $saleReturnPayment->payment_method == 'Other' ? 'selected' : '' }} value="Other">Other</option>
+                                                <option {{ $saleReturnPayment->payment_method == 'Cash' ? 'selected' : '' }} value="Cash">Készpénz</option>
+                                                <option {{ $saleReturnPayment->payment_method == 'Credit Card' ? 'selected' : '' }} value="Credit Card">Bankkártya</option>
+                                                <option {{ $saleReturnPayment->payment_method == 'Bank Transfer' ? 'selected' : '' }} value="Bank Transfer">Banki átutalásr</option>
+                                                <option {{ $saleReturnPayment->payment_method == 'Other' ? 'selected' : '' }} value="Other">Egyéb</option>
                                             </select>
                                         </div>
                                     </div>

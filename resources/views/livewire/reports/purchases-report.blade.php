@@ -101,7 +101,7 @@
                                 <td>{{ $purchase->reference }}</td>
                                 <td>{{ $purchase->supplier_name }}</td>
                                 <td>
-                                    @if ($purchase->status == '{{ __('triangle.Pending')}}')
+                                    @if ($purchase->status == 'Pnding')
                                         <span class="badge badge-info">
                                     {{ $purchase->status }}
                                 </span>

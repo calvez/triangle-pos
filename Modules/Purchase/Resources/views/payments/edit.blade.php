@@ -29,7 +29,7 @@
                             <div class="form-row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="reference">Reference <span class="text-danger">*</span></label>
+                                        <label for="reference">Referencia <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="reference" required readonly value="{{ $purchasePayment->reference }}">
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="amount">Amount <span class="text-danger">*</span></label>
+                                        <label for="amount">Összeg <span class="text-danger">*</span></label>
                                         <div class="input-group">
                                             <input id="amount" type="text" class="form-control" name="amount" required value="{{ old('amount') ?? $purchasePayment->amount }}">
                                             <div class="input-group-append">
@@ -68,7 +68,7 @@
                                             <select class="form-control" name="payment_method" id="payment_method" required>
                                                 <option {{ $purchasePayment->payment_method == 'Cash' ? 'selected' : '' }} value="Cash">Cash</option>
                                                 <option {{ $purchasePayment->payment_method == 'Credit Card' ? 'selected' : '' }} value="Credit Card">Credit Card</option>
-                                                <option {{ $purchasePayment->payment_method == 'Bank Transfer' ? 'selected' : '' }} value="Bank Transfer">Bank Transfer</option>
+                                                <option {{ $purchasePayment->payment_method == 'Bank Transfer' ? 'selected' : '' }} value="Bank Transfer">Banki átutalás</option>
                                                 <option {{ $purchasePayment->payment_method == 'Cheque' ? 'selected' : '' }} value="Cheque">Cheque</option>
                                                 <option {{ $purchasePayment->payment_method == 'Other' ? 'selected' : '' }} value="Other">Other</option>
                                             </select>

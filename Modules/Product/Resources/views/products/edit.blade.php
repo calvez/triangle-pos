@@ -43,7 +43,7 @@
                             <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="category_id">Category <span class="text-danger">*</span></label>
+                                        <label for="category_id">Kategória <span class="text-danger">*</span></label>
                                         <select class="form-control" name="category_id" id="category_id" required>
                                             @foreach(\Modules\Product\Entities\Category::all() as $category)
                                                 <option {{ $category->id == $product->category->id ? 'selected' : '' }} value="{{ $category->id }}">{{ $category->category_name }}</option>

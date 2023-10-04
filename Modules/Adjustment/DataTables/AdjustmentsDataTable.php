@@ -55,7 +55,7 @@ class AdjustmentsDataTable extends DataTable
                 ->className('text-center align-middle'),
 
             Column::make('adjusted_products_count')
-                ->title('Products')
+                ->title('Termék')
                 ->className('text-center align-middle'),
 
             Column::computed('action')
@@ -70,6 +70,6 @@ class AdjustmentsDataTable extends DataTable
 
     protected function filename(): string
     {
-        return 'Adjustments_'.date('YmdHis');
+        return 'Adjustments_' . date('YmdHis');
     }
 }

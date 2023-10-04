@@ -95,7 +95,7 @@
             @endif
             @if($sale->shipping_amount)
                 <tr>
-                    <th colspan="2" style="text-align:left">Shipping</th>
+                    <th colspan="2" style="text-align:left">Szállítás</th>
                     <th style="text-align:right">{{ format_currency($sale->shipping_amount) }}</th>
                 </tr>
             @endif

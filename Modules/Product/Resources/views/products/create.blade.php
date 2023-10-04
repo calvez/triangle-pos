@@ -41,7 +41,7 @@
 
                             <div class="form-row">
                                 <div class="col-md-6">
-                                    <label for="category_id">Category <span class="text-danger">*</span></label>
+                                    <label for="category_id">Kategória <span class="text-danger">*</span></label>
                                     <div class="input-group">
                                         <select class="form-control" name="category_id" id="category_id" required>
                                             <option value="" selected disabled>Select Category</option>

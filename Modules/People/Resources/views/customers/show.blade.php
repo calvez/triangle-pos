@@ -6,7 +6,7 @@
     <ol class="breadcrumb border-0 m-0">
         <li class="breadcrumb-item"><a href="{{ route('home') }}">{{ __('triangle.Home') }}</a></li>
         <li class="breadcrumb-item"><a href="{{ route('customers.index') }}">Vásárlók</a></li>
-        <li class="breadcrumb-item active">Details</li>
+        <li class="breadcrumb-item active">Részletek </li>
     </ol>
 @endsection
 

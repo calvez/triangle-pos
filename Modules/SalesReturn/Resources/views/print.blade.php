@@ -108,7 +108,7 @@
                                     <td class="right">{{ format_currency($sale_return->tax_amount) }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="left"><strong>Shipping)</strong></td>
+                                    <td class="left"><strong>Szállítás)</strong></td>
                                     <td class="right">{{ format_currency($sale_return->shipping_amount) }}</td>
                                 </tr>
                                 <tr>

@@ -94,7 +94,7 @@
                                 <td>(-) {{ format_currency(Cart::instance($cart_instance)->discount()) }}</td>
                             </tr>
                             <tr>
-                                <th>Shipping</th>
+                                <th>Szállítás</th>
                                 <input type="hidden" value="{{ $shipping }}" name="shipping_amount">
                                 <td>(+) {{ format_currency($shipping) }}</td>
                             </tr>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="form-group">
-                        <label for="shipping_amount">Shipping</label>
+                        <label for="shipping_amount">Szállítás</label>
                         <input wire:model.lazy="shipping" type="number" class="form-control" min="0" value="0" required step="0.01">
                     </div>
                 </div>

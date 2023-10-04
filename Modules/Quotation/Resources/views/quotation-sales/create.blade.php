@@ -29,7 +29,7 @@
                             <div class="form-row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="reference">Reference <span class="text-danger">*</span></label>
+                                        <label for="reference">Referencia <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" name="reference" required readonly value="SL">
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@
                                             <select class="form-control" name="payment_method" id="payment_method" required>
                                                 <option value="Cash">Cash</option>
                                                 <option value="Credit Card">Credit Card</option>
-                                                <option value="Bank Transfer">Bank Transfer</option>
+                                                <option value="Bank Transfer">Banki átutalás</option>
                                                 <option value="Cheque">Cheque</option>
                                                 <option value="Other">Other</option>
                                             </select>
