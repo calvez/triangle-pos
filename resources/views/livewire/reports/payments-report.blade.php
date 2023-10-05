@@ -45,11 +45,11 @@
                                     <label>{{ __('triangle.Payment Method')}}</label>
                                     <select wire:model.defer="payment_method" class="form-control" name="payment_method">
                                         <option value="">Select {{ __('triangle.Payment Method')}}</option>
-                                        <option value="Cash">Cash</option>
-                                        <option value="Credit Card">Credit Card</option>
+                                        <option value="Cash">Készpénz</option>
+                                        <option value="Credit Card">Bankkártya</option>
                                         <option value="Bank Transfer">Bank Transfer</option>
-                                        <option value="Cheque">Cheque</option>
-                                        <option value="Other">Other</option>
+                                        <option value="Cheque">Csekk</option>
+                                        <option value="Other">Egyéb</option>
                                     </select>
                                 </div>
                             </div>

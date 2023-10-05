@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="col-md-6 mb-3 mb-md-0">
-                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Customer Info:</h4>
+                            <h4 class="mb-2" style="border-bottom: 1px solid #dddddd;padding-bottom: 10px;">Vásárló  Info:</h4>
                             <div><strong>{{ $customer->customer_name }}</strong></div>
                             <div>{{ $customer->address }}</div>
                             <div>Email: {{ $customer->customer_email }}</div>

@@ -56,7 +56,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="is_active">Status <span class="text-danger">*</span></label>
+                                <label for="is_active">Státusz <span class="text-danger">*</span></label>
                                 <select class="form-control" name="is_active" id="is_active" required>
                                     <option value="1" {{ $user->is_active == 1 ? 'selected' : ''}}>Active</option>
                                     <option value="2" {{ $user->is_active == 2 ? 'selected' : ''}}>Deactive</option>

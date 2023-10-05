@@ -20,7 +20,7 @@
                 <div class="card">
                     <div class="card-body">
                         <a href="{{ route('customers.create') }}" class="btn btn-primary">
-                            {{ __('triangle.Add') }} Customer <i class="bi bi-plus"></i>
+                            Vásárló hozzáadása <i class="bi bi-plus"></i>
                         </a>
 
                         <hr>

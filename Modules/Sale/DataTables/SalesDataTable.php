@@ -70,19 +70,19 @@ class SalesDataTable extends DataTable
                 ->title('Vevő')
                 ->className('text-center align-middle'),
 
-            Column::computed('status')->title('Stárusz')
+            Column::computed('status')->title('Státusz')
                 ->className('text-center align-middle'),
 
             Column::computed('total_amount')->title('Végösszeg')
                 ->className('text-center align-middle'),
 
-            Column::computed('paid_amount')
+            Column::computed('paid_amount')->title('Fizetve')
                 ->className('text-center align-middle'),
 
-            Column::computed('due_amount')
+            Column::computed('due_amount')->title('Hátralék')
                 ->className('text-center align-middle'),
 
-            Column::computed('payment_status')
+            Column::computed('payment_status')->title('Fizetési státusz')
                 ->className('text-center align-middle'),
 
             Column::computed('action')->title('Műveletek')

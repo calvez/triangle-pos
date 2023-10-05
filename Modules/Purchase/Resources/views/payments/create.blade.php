@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="date">Date <span class="text-danger">*</span></label>
+                                        <label for="date">Dátum <span class="text-danger">*</span></label>
                                         <input type="date" class="form-control" name="date" required value="{{ now()->format('Y-m-d') }}">
                                     </div>
                                 </div>
@@ -65,11 +65,11 @@
                                         <div class="form-group">
                                             <label for="payment_method">{{ __('triangle.Payment Method')}} <span class="text-danger">*</span></label>
                                             <select class="form-control" name="payment_method" id="payment_method" required>
-                                                <option value="Cash">Cash</option>
-                                                <option value="Credit Card">Credit Card</option>
+                                                <option value="Cash">Készpénz</option>
+                                                <option value="Credit Card">Bankkártya</option>
                                                 <option value="Bank Transfer">Bank Transfer</option>
-                                                <option value="Cheque">Cheque</option>
-                                                <option value="Other">Other</option>
+                                                <option value="Cheque">Csekk</option>
+                                                <option value="Other">Egyéb</option>
                                             </select>
                                         </div>
                                     </div>

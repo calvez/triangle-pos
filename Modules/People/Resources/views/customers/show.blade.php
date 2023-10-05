@@ -19,15 +19,15 @@
                         <div class="table-responsive">
                             <table class="table table-bordered">
                                 <tr>
-                                    <th>Customer Name</th>
+                                    <th>Vásárló  Name</th>
                                     <td>{{ $customer->customer_name }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Customer Email</th>
+                                    <th>Vásárló  Email</th>
                                     <td>{{ $customer->customer_email }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Customer Phone</th>
+                                    <th>Vásárló  Phone</th>
                                     <td>{{ $customer->customer_phone }}</td>
                                 </tr>
                                 <tr>

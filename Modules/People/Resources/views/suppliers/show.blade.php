@@ -23,23 +23,23 @@
                                     <td>{{ $supplier->supplier_name }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Beszállító Email</th>
+                                    <th>Beszállító E-mail</th>
                                     <td>{{ $supplier->supplier_email }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Beszállító Phone</th>
+                                    <th>Beszállító telefon</th>
                                     <td>{{ $supplier->supplier_phone }}</td>
                                 </tr>
                                 <tr>
-                                    <th>City</th>
+                                    <th>Város</th>
                                     <td>{{ $supplier->city }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Country</th>
+                                    <th>Ország</th>
                                     <td>{{ $supplier->country }}</td>
                                 </tr>
                                 <tr>
-                                    <th>Address</th>
+                                    <th>Cím</th>
                                     <td>{{ $supplier->address }}</td>
                                 </tr>
                             </table>

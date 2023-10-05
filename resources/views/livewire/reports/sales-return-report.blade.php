@@ -25,7 +25,7 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="form-group">
-                                    <label>Customer</label>
+                                    <label>Vásárló </label>
                                     <select wire:model.defer="customer_id" class="form-control" name="customer_id">
                                         <option value="">Vevő kiválasztása</option>
                                         @foreach($customers as $customer)
@@ -43,7 +43,7 @@
                                         <option value="">Select Status</option>
                                         <option value="Pending">Pending</option>
                                         <option value="Shipped">Shipped</option>
-                                        <option value="Completed">Completed</option>
+                                        <option value="Completed">Teljesítve</option>
                                     </select>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                                     <label>Fizetés állapota</label>
                                     <select wire:model.defer="payment_status" class="form-control" name="payment_status">
                                         <option value="">Fizetési állapot kiválasztása</option>
-                                        <option value="Paid">Paid</option>
+                                        <option value="Paid">Fizetve</option>
                                         <option value="Unpaid">Unpaid</option>
                                         <option value="Partial">Partial</option>
                                     </select>
@@ -86,10 +86,10 @@
                         <tr>
                             <th>Date</th>
                             <th>Reference</th>
-                            <th>Customer</th>
+                            <th>Vásárló </th>
                             <th>Status</th>
                             <th>Total</th>
-                            <th>Paid</th>
+                            <th>Fizetve</th>
                             <th>Due</th>
                             <th>Fizetés állapota</th>
                         </tr>

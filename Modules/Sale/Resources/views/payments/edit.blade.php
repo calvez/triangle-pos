@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="date">Date <span class="text-danger">*</span></label>
+                                        <label for="date">Dátum <span class="text-danger">*</span></label>
                                         <input type="date" class="form-control" name="date" required value="{{ $salePayment->getAttributes()['date'] }}">
                                     </div>
                                 </div>
@@ -66,11 +66,11 @@
                                         <div class="form-group">
                                             <label for="payment_method">{{ __('triangle.Payment Method')}} <span class="text-danger">*</span></label>
                                             <select class="form-control" name="payment_method" id="payment_method" required>
-                                                <option {{ $salePayment->payment_method == 'Cash' ? 'selected' : '' }} value="Cash">Cash</option>
-                                                <option {{ $salePayment->payment_method == 'Credit Card' ? 'selected' : '' }} value="Credit Card">Credit Card</option>
+                                                <option {{ $salePayment->payment_method == 'Cash' ? 'selected' : '' }} value="Cash">Készpénz</option>
+                                                <option {{ $salePayment->payment_method == 'Credit Card' ? 'selected' : '' }} value="Credit Card">Bankkártya</option>
                                                 <option {{ $salePayment->payment_method == 'Bank Transfer' ? 'selected' : '' }} value="Bank Transfer">Banki átutalás</option>
-                                                <option {{ $salePayment->payment_method == 'Cheque' ? 'selected' : '' }} value="Cheque">Cheque</option>
-                                                <option {{ $salePayment->payment_method == 'Other' ? 'selected' : '' }} value="Other">Other</option>
+                                                <option {{ $salePayment->payment_method == 'Cheque' ? 'selected' : '' }} value="Cheque">Csekk</option>
+                                                <option {{ $salePayment->payment_method == 'Other' ? 'selected' : '' }} value="Other">Egyéb</option>
                                             </select>
                                         </div>
                                     </div>

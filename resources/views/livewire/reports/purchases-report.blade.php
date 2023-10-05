@@ -42,8 +42,8 @@
                                     <select wire:model.defer="purchase_status" class="form-control" name="purchase_status">
                                         <option value="">Select Status</option>
                                         <option value="{{ __('triangle.Pending')}}">{{ __('triangle.Pending')}}</option>
-                                        <option value="Ordered">Ordered</option>
-                                        <option value="Completed">Completed</option>
+                                        <option value="Ordered">Megrendelve</option>
+                                        <option value="Completed">Teljesítve</option>
                                     </select>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                                     <label>Fizetés állapota</label>
                                     <select wire:model.defer="payment_status" class="form-control" name="payment_status">
                                         <option value="">Fizetési állapot kiválasztása</option>
-                                        <option value="Paid">Paid</option>
+                                        <option value="Paid">Fizetve</option>
                                         <option value="Unpaid">Unpaid</option>
                                         <option value="Partial">Partial</option>
                                     </select>
@@ -89,7 +89,7 @@
                             <th>Beszállító</th>
                             <th>Status</th>
                             <th>Total</th>
-                            <th>Paid</th>
+                            <th>Fizetve</th>
                             <th>Due</th>
                             <th>Fizetés állapota</th>
                         </tr>

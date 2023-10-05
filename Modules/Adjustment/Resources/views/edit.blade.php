@@ -40,7 +40,7 @@
                                 <div class="col-lg-6">
                                     <div class="from-group">
                                         <div class="form-group">
-                                            <label for="date">Date <span class="text-danger">*</span></label>
+                                            <label for="date">Dátum <span class="text-danger">*</span></label>
                                             <input type="date" class="form-control" name="date" required value="{{ $adjustment->getAttributes()['date'] }}">
                                         </div>
                                     </div>

@@ -23,7 +23,7 @@ class UsersDataTable extends DataTable
             })
             ->addColumn('status', function ($data) {
                 if ($data->is_active == 1) {
-                    $html = '<span class="badge badge-success">Active</span>';
+                    $html = '<span class="badge badge-success">Aktív</span>';
                 } else {
                     $html = '<span class="badge badge-warning">Deactivated</span>';
                 }
@@ -72,19 +72,19 @@ class UsersDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            Column::computed('image')
+            Column::computed('image')->title('Kép')
                 ->className('text-center align-middle'),
 
-            Column::make('name')
+            Column::make('name')->title('Név')
                 ->className('text-center align-middle'),
 
             Column::make('email')
                 ->className('text-center align-middle'),
 
-            Column::computed('role')
+            Column::computed('role')->title('Szerepkör')
                 ->className('text-center align-middle'),
 
-            Column::computed('status')->title('Stárusz')
+            Column::computed('status')->title('Státusz')
                 ->className('text-center align-middle'),
 
             Column::computed('action')->title('Műveletek')

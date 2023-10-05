@@ -71,7 +71,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="is_active">Status <span class="text-danger">*</span></label>
+                                <label for="is_active">Státusz <span class="text-danger">*</span></label>
                                 <select class="form-control" name="is_active" id="is_active" required>
                                     <option value="" selected disabled>Select Status</option>
                                     <option value="1">Active</option>

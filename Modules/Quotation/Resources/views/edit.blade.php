@@ -36,7 +36,7 @@
                                 <div class="col-lg-4">
                                     <div class="from-group">
                                         <div class="form-group">
-                                            <label for="customer_id">Customer <span class="text-danger">*</span></label>
+                                            <label for="customer_id">Vásárló  <span class="text-danger">*</span></label>
                                             <select class="form-control" name="customer_id" id="customer_id" required>
                                                 @foreach(\Modules\People\Entities\Customer::all() as $customer)
                                                     <option {{ $quotation->customer_id == $customer->id ? 'selected' : '' }} value="{{ $customer->id }}">{{ $customer->customer_name }}</option>
@@ -48,7 +48,7 @@
                                 <div class="col-lg-4">
                                     <div class="from-group">
                                         <div class="form-group">
-                                            <label for="date">Date <span class="text-danger">*</span></label>
+                                            <label for="date">Dátum <span class="text-danger">*</span></label>
                                             <input type="date" class="form-control" name="date" required value="{{ $quotation->getAttributes()['date'] }}">
                                         </div>
                                     </div>
@@ -60,7 +60,7 @@
                             <div class="form-row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="status">Status <span class="text-danger">*</span></label>
+                                        <label for="status">Státusz <span class="text-danger">*</span></label>
                                         <select class="form-control" name="status" id="status" required>
                                             <option {{ $quotation->status == '{{ __('triangle.Pending')}}' ? 'selected' : '' }} value="{{ __('triangle.Pending')}}">{{ __('triangle.Pending')}}</option>
                                             <option {{ $quotation->status == 'Sent' ? 'selected' : '' }} value="Sent">Sent</option>

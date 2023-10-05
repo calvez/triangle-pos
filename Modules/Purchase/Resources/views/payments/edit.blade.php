@@ -35,7 +35,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <label for="date">Date <span class="text-danger">*</span></label>
+                                        <label for="date">Dátum <span class="text-danger">*</span></label>
                                         <input type="date" class="form-control" name="date" required value="{{ $purchasePayment->getAttributes()['date'] }}">
                                     </div>
                                 </div>
@@ -66,11 +66,11 @@
                                         <div class="form-group">
                                             <label for="payment_method">{{ __('triangle.Payment Method')}} <span class="text-danger">*</span></label>
                                             <select class="form-control" name="payment_method" id="payment_method" required>
-                                                <option {{ $purchasePayment->payment_method == 'Cash' ? 'selected' : '' }} value="Cash">Cash</option>
-                                                <option {{ $purchasePayment->payment_method == 'Credit Card' ? 'selected' : '' }} value="Credit Card">Credit Card</option>
+                                                <option {{ $purchasePayment->payment_method == 'Cash' ? 'selected' : '' }} value="Cash">Készpénz</option>
+                                                <option {{ $purchasePayment->payment_method == 'Credit Card' ? 'selected' : '' }} value="Credit Card">Bankkártya</option>
                                                 <option {{ $purchasePayment->payment_method == 'Bank Transfer' ? 'selected' : '' }} value="Bank Transfer">Banki átutalás</option>
-                                                <option {{ $purchasePayment->payment_method == 'Cheque' ? 'selected' : '' }} value="Cheque">Cheque</option>
-                                                <option {{ $purchasePayment->payment_method == 'Other' ? 'selected' : '' }} value="Other">Other</option>
+                                                <option {{ $purchasePayment->payment_method == 'Cheque' ? 'selected' : '' }} value="Cheque">Csekk</option>
+                                                <option {{ $purchasePayment->payment_method == 'Other' ? 'selected' : '' }} value="Other">Egyéb</option>
                                             </select>
                                         </div>
                                     </div>

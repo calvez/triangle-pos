@@ -48,13 +48,13 @@ class SuppliersDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            Column::make('supplier_name')
+            Column::make('supplier_name')->title('Beszállító neve')
                 ->className('text-center align-middle'),
 
-            Column::make('supplier_email')
+            Column::make('supplier_email')->title('Email')
                 ->className('text-center align-middle'),
 
-            Column::make('supplier_phone')
+            Column::make('supplier_phone')->title('Telefon')
                 ->className('text-center align-middle'),
 
             Column::computed('action')->title('Műveletek')

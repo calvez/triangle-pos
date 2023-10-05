@@ -67,22 +67,22 @@ class PurchaseReturnsDataTable extends DataTable
                 ->className('text-center align-middle'),
 
             Column::make('supplier_name')
-                ->title('Supplier')
+                ->title('Beszállító')
                 ->className('text-center align-middle'),
 
-            Column::computed('status')->title('Stárusz')
+            Column::computed('status')->title('Státusz')
                 ->className('text-center align-middle'),
 
             Column::computed('total_amount')->title('Végösszeg')
                 ->className('text-center align-middle'),
 
-            Column::computed('paid_amount')
+            Column::computed('paid_amount')->title('Fizetve')
                 ->className('text-center align-middle'),
 
-            Column::computed('due_amount')
+            Column::computed('due_amount')->title('Kintlevőség')
                 ->className('text-center align-middle'),
 
-            Column::computed('payment_status')
+            Column::computed('payment_status')->title('Fizetés státusza')
                 ->className('text-center align-middle'),
 
             Column::computed('action')->title('Műveletek')

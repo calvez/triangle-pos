@@ -20,7 +20,7 @@
                 <div class="card">
                     <div class="card-body">
                         <a href="{{ route('suppliers.create') }}" class="btn btn-primary">
-                            Add Beszállító <i class="bi bi-plus"></i>
+                            Beszállító hozzáadása<i class="bi bi-plus"></i>
                         </a>
 
                         <hr>

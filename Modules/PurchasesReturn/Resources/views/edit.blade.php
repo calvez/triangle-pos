@@ -48,7 +48,7 @@
                                 <div class="col-lg-4">
                                     <div class="from-group">
                                         <div class="form-group">
-                                            <label for="date">Date <span class="text-danger">*</span></label>
+                                            <label for="date">Dátum <span class="text-danger">*</span></label>
                                             <input type="date" class="form-control" name="date" required value="{{ $purchase_return->date }}">
                                         </div>
                                     </div>
@@ -60,7 +60,7 @@
                             <div class="form-row">
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="status">Status <span class="text-danger">*</span></label>
+                                        <label for="status">Státusz <span class="text-danger">*</span></label>
                                         <select class="form-control" name="status" id="status" required>
                                             <option {{ $purchase_return->status == 'Pending' ? 'selected' : '' }} value="Pending"></option>
                                             <option {{ $purchase_return->status == 'Shipped' ? 'selected' : '' }} value="Shipped">Kiszállítva</option>

@@ -73,7 +73,7 @@
                                             <label for="payment_method">{{ __('triangle.Payment Method')}} <span class="text-danger">*</span></label>
                                             <select class="form-control" name="payment_method" id="payment_method" required>
                                                 <option value="Cash">Készpénz</option>
-                                                <option value="Credit Card">Credit Card</option>
+                                                <option value="Credit Card">Bankkártya</option>
                                                 <option value="Bank Transfer">Banki átutalás</option>
                                                 <option value="Cheque">Csekk</option>
                                                 <option value="Other">Egyéb</option>
